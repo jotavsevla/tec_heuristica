@@ -1,0 +1,29 @@
+Solução CVRP
+============
+
+Rota 1:
+Sequência: 50 -> 45 -> 11 -> 46 -> 3 -> 16 -> 36 -> 14 -> 43 -> 41 -> 18 -> 40 -> 9 -> 50
+Demanda total: 160
+Distância: 114
+
+Rota 2:
+Sequência: 50 -> 26 -> 0 -> 31 -> 10 -> 37 -> 4 -> 48 -> 8 -> 49 -> 15 -> 28 -> 20 -> 50
+Demanda total: 157
+Distância: 84
+
+Rota 3:
+Sequência: 50 -> 5 -> 47 -> 7 -> 25 -> 30 -> 27 -> 2 -> 19 -> 34 -> 35 -> 50
+Demanda total: 154
+Distância: 82
+
+Rota 4:
+Sequência: 50 -> 17 -> 13 -> 24 -> 12 -> 39 -> 44 -> 32 -> 50
+Demanda total: 153
+Distância: 104
+
+Rota 5:
+Sequência: 50 -> 1 -> 21 -> 6 -> 22 -> 23 -> 42 -> 33 -> 29 -> 38 -> 50
+Demanda total: 153
+Distância: 168
+
+Distância total: 552
