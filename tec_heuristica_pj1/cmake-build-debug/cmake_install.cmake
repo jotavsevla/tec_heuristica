@@ -1,4 +1,4 @@
-# Install script for directory: /Users/jotavsevla/CLionProjects/tec_heuristica
+# Install script for directory: /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug/lab/tinyxml2/cmake_install.cmake")
+  include("/Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug/lab/tinyxml2/cmake_install.cmake")
 
 endif()
 
@@ -51,5 +51,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

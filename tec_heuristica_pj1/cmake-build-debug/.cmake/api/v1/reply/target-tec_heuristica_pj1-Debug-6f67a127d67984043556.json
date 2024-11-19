@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "bin/tec_heuristica"
+			"path" : "bin/tec_heuristica_pj1"
 		}
 	],
 	"backtrace" : 1,
@@ -82,11 +82,11 @@
 			[
 				{
 					"backtrace" : 4,
-					"path" : "/Users/jotavsevla/CLionProjects/tec_heuristica/include"
+					"path" : "/Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/include"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "/Users/jotavsevla/CLionProjects/tec_heuristica/lab/tinyxml2"
+					"path" : "/Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/lab/tinyxml2"
 				}
 			],
 			"language" : "CXX",
@@ -115,7 +115,7 @@
 			"id" : "tinyxml2::@f0d6f4fd9d3759b09b36"
 		}
 	],
-	"id" : "tec_heuristica::@6890427a1f51a3e7e1df",
+	"id" : "tec_heuristica_pj1::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -136,8 +136,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "tec_heuristica",
-	"nameOnDisk" : "tec_heuristica",
+	"name" : "tec_heuristica_pj1",
+	"nameOnDisk" : "tec_heuristica_pj1",
 	"paths" : 
 	{
 		"build" : ".",

@@ -1,4 +1,4 @@
-# Install script for directory: /Users/jotavsevla/CLionProjects/tec_heuristica/lab/tinyxml2
+# Install script for directory: /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/lab/tinyxml2
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,7 +38,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "tinyxml2_development" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug/lab/tinyxml2/libtinyxml2.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug/lab/tinyxml2/libtinyxml2.a")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libtinyxml2.a" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libtinyxml2.a")
     execute_process(COMMAND "/Library/Developer/CommandLineTools/usr/bin/ranlib" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libtinyxml2.a")
@@ -49,7 +49,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "tinyxml2_development" OR NOT CMAKE_INSTALL_
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/tinyxml2/tinyxml2-static-targets.cmake")
     file(DIFFERENT _cmake_export_file_changed FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/tinyxml2/tinyxml2-static-targets.cmake"
-         "/Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug/lab/tinyxml2/CMakeFiles/Export/a801c02ec1fcb42ccc21a747b2503e91/tinyxml2-static-targets.cmake")
+         "/Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug/lab/tinyxml2/CMakeFiles/Export/a801c02ec1fcb42ccc21a747b2503e91/tinyxml2-static-targets.cmake")
     if(_cmake_export_file_changed)
       file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/tinyxml2/tinyxml2-static-targets-*.cmake")
       if(_cmake_old_config_files)
@@ -62,24 +62,24 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "tinyxml2_development" OR NOT CMAKE_INSTALL_
     endif()
     unset(_cmake_export_file_changed)
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/tinyxml2" TYPE FILE FILES "/Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug/lab/tinyxml2/CMakeFiles/Export/a801c02ec1fcb42ccc21a747b2503e91/tinyxml2-static-targets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/tinyxml2" TYPE FILE FILES "/Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug/lab/tinyxml2/CMakeFiles/Export/a801c02ec1fcb42ccc21a747b2503e91/tinyxml2-static-targets.cmake")
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/tinyxml2" TYPE FILE FILES "/Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug/lab/tinyxml2/CMakeFiles/Export/a801c02ec1fcb42ccc21a747b2503e91/tinyxml2-static-targets-debug.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/tinyxml2" TYPE FILE FILES "/Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug/lab/tinyxml2/CMakeFiles/Export/a801c02ec1fcb42ccc21a747b2503e91/tinyxml2-static-targets-debug.cmake")
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "tinyxml2_development" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/tinyxml2" TYPE FILE FILES
-    "/Users/jotavsevla/CLionProjects/tec_heuristica/lab/tinyxml2/cmake/tinyxml2-config.cmake"
-    "/Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug/lab/tinyxml2/tinyxml2-config-version.cmake"
+    "/Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/lab/tinyxml2/cmake/tinyxml2-config.cmake"
+    "/Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug/lab/tinyxml2/tinyxml2-config-version.cmake"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "tinyxml2_development" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE FILES "/Users/jotavsevla/CLionProjects/tec_heuristica/lab/tinyxml2/tinyxml2.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE FILES "/Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/lab/tinyxml2/tinyxml2.h")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "tinyxml2_development" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug/lab/tinyxml2/tinyxml2.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug/lab/tinyxml2/tinyxml2.pc")
 endif()
 

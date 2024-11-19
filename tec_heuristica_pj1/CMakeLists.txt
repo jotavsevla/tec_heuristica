@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(tec_heuristica)
+project(tec_heuristica_pj1)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)

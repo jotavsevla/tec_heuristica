@@ -83,7 +83,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug"
+			"value" : "/Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -511,7 +511,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -571,7 +571,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/jotavsevla/CLionProjects/tec_heuristica"
+			"value" : "/Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1"
 		},
 		{
 			"name" : "CMAKE_INSTALL_BINDIR",
@@ -1107,7 +1107,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "tec_heuristica"
+			"value" : "tec_heuristica_pj1"
 		},
 		{
 			"name" : "CMAKE_PROJECT_VERSION",
@@ -1702,7 +1702,7 @@
 			"value" : "/usr/local"
 		},
 		{
-			"name" : "tec_heuristica_BINARY_DIR",
+			"name" : "tec_heuristica_pj1_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1711,10 +1711,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug"
+			"value" : "/Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug"
 		},
 		{
-			"name" : "tec_heuristica_IS_TOP_LEVEL",
+			"name" : "tec_heuristica_pj1_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1726,7 +1726,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "tec_heuristica_SOURCE_DIR",
+			"name" : "tec_heuristica_pj1_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1735,7 +1735,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/jotavsevla/CLionProjects/tec_heuristica"
+			"value" : "/Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1"
 		},
 		{
 			"name" : "tinyxml2_BINARY_DIR",
@@ -1747,7 +1747,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug/lab/tinyxml2"
+			"value" : "/Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug/lab/tinyxml2"
 		},
 		{
 			"name" : "tinyxml2_BUILD_TESTING",
@@ -1807,7 +1807,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/jotavsevla/CLionProjects/tec_heuristica/lab/tinyxml2"
+			"value" : "/Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/lab/tinyxml2"
 		}
 	],
 	"kind" : "cache",

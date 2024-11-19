@@ -81,7 +81,7 @@
 					[
 						0
 					],
-					"name" : "tec_heuristica",
+					"name" : "tec_heuristica_pj1",
 					"targetIndexes" : 
 					[
 						28
@@ -329,22 +329,22 @@
 				},
 				{
 					"directoryIndex" : 0,
-					"id" : "tec_heuristica::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-tec_heuristica-Debug-c331a9db41b1b28d1eb6.json",
-					"name" : "tec_heuristica",
+					"id" : "tec_heuristica_pj1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tec_heuristica_pj1-Debug-6f67a127d67984043556.json",
+					"name" : "tec_heuristica_pj1",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "tinyxml2::@f0d6f4fd9d3759b09b36",
-					"jsonFile" : "target-tinyxml2-Debug-b8af4ac7ee3a17511288.json",
+					"jsonFile" : "target-tinyxml2-Debug-562275102be56c60afdd.json",
 					"name" : "tinyxml2",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "xmltest::@f0d6f4fd9d3759b09b36",
-					"jsonFile" : "target-xmltest-Debug-a6a621e6f99012d39aed.json",
+					"jsonFile" : "target-xmltest-Debug-528f90dae5daeecfb349.json",
 					"name" : "xmltest",
 					"projectIndex" : 1
 				}
@@ -354,8 +354,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug",
-		"source" : "/Users/jotavsevla/CLionProjects/tec_heuristica"
+		"build" : "/Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug",
+		"source" : "/Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1"
 	},
 	"version" : 
 	{

@@ -1,9 +1,8 @@
 {
-	"archive" : {},
 	"artifacts" : 
 	[
 		{
-			"path" : "lab/tinyxml2/libtinyxml2.a"
+			"path" : "lab/tinyxml2/xmltest"
 		}
 	],
 	"backtrace" : 1,
@@ -11,10 +10,8 @@
 	{
 		"commands" : 
 		[
-			"add_library",
-			"install",
-			"target_compile_definitions",
-			"target_include_directories"
+			"add_executable",
+			"target_link_libraries"
 		],
 		"files" : 
 		[
@@ -28,25 +25,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 22,
+				"line" : 46,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 75,
-				"parent" : 0
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 29,
-				"parent" : 0
-			},
-			{
-				"command" : 3,
-				"file" : 0,
-				"line" : 27,
+				"line" : 47,
 				"parent" : 0
 			}
 		]
@@ -63,19 +48,19 @@
 			"defines" : 
 			[
 				{
-					"backtrace" : 3,
+					"backtrace" : 2,
 					"define" : "TINYXML2_DEBUG"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 2,
 					"define" : "_FILE_OFFSET_BITS=64"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 4,
-					"path" : "/Users/jotavsevla/CLionProjects/tec_heuristica/lab/tinyxml2"
+					"backtrace" : 2,
+					"path" : "/Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/lab/tinyxml2"
 				}
 			],
 			"language" : "CXX",
@@ -93,23 +78,36 @@
 			]
 		}
 	],
-	"id" : "tinyxml2::@f0d6f4fd9d3759b09b36",
-	"install" : 
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "tinyxml2::@f0d6f4fd9d3759b09b36"
+		}
+	],
+	"id" : "xmltest::@f0d6f4fd9d3759b09b36",
+	"link" : 
 	{
-		"destinations" : 
+		"commandFragments" : 
 		[
 			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
 				"backtrace" : 2,
-				"path" : "lib"
+				"fragment" : "lab/tinyxml2/libtinyxml2.a",
+				"role" : "libraries"
 			}
 		],
-		"prefix" : 
-		{
-			"path" : "/usr/local"
-		}
+		"language" : "CXX"
 	},
-	"name" : "tinyxml2",
-	"nameOnDisk" : "libtinyxml2.a",
+	"name" : "xmltest",
+	"nameOnDisk" : "xmltest",
 	"paths" : 
 	{
 		"build" : "lab/tinyxml2",
@@ -123,13 +121,6 @@
 			[
 				0
 			]
-		},
-		{
-			"name" : "Header Files",
-			"sourceIndexes" : 
-			[
-				1
-			]
 		}
 	],
 	"sources" : 
@@ -137,14 +128,9 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "lab/tinyxml2/tinyxml2.cpp",
+			"path" : "lab/tinyxml2/xmltest.cpp",
 			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "lab/tinyxml2/tinyxml2.h",
-			"sourceGroupIndex" : 1
 		}
 	],
-	"type" : "STATIC_LIBRARY"
+	"type" : "EXECUTABLE"
 }

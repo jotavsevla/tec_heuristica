@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: tec_heuristica
+# Project: tec_heuristica_pj1
 # Configurations: Debug
 # =============================================================================
 
@@ -39,79 +39,90 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug/
+cmake_ninja_workdir = /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target tec_heuristica
+# Object build statements for EXECUTABLE target tec_heuristica_pj1
 
 
 #############################################
-# Order-only phony target for tec_heuristica
+# Order-only phony target for tec_heuristica_pj1
 
-build cmake_object_order_depends_target_tec_heuristica: phony || cmake_object_order_depends_target_tinyxml2
+build cmake_object_order_depends_target_tec_heuristica_pj1: phony || cmake_object_order_depends_target_tinyxml2
 
-build CMakeFiles/tec_heuristica.dir/src/main.cpp.o: CXX_COMPILER__tec_heuristica_unscanned_Debug /Users/jotavsevla/CLionProjects/tec_heuristica/src/main.cpp || cmake_object_order_depends_target_tec_heuristica
+build CMakeFiles/tec_heuristica_pj1.dir/src/main.cpp.o: CXX_COMPILER__tec_heuristica_pj1_unscanned_Debug /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/src/main.cpp || cmake_object_order_depends_target_tec_heuristica_pj1
   DEFINES = -DTINYXML2_DEBUG -D_FILE_OFFSET_BITS=64
-  DEP_FILE = CMakeFiles/tec_heuristica.dir/src/main.cpp.o.d
+  DEP_FILE = CMakeFiles/tec_heuristica_pj1.dir/src/main.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fcolor-diagnostics -Wall -Wextra
-  INCLUDES = -I/Users/jotavsevla/CLionProjects/tec_heuristica/include -I/Users/jotavsevla/CLionProjects/tec_heuristica/lab/tinyxml2
-  OBJECT_DIR = CMakeFiles/tec_heuristica.dir
-  OBJECT_FILE_DIR = CMakeFiles/tec_heuristica.dir/src
+  INCLUDES = -I/Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/include -I/Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/lab/tinyxml2
+  OBJECT_DIR = CMakeFiles/tec_heuristica_pj1.dir
+  OBJECT_FILE_DIR = CMakeFiles/tec_heuristica_pj1.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/tec_heuristica_pj1.dir/
+  TARGET_PDB = bin/tec_heuristica_pj1.pdb
 
-build CMakeFiles/tec_heuristica.dir/src/Interface.cpp.o: CXX_COMPILER__tec_heuristica_unscanned_Debug /Users/jotavsevla/CLionProjects/tec_heuristica/src/Interface.cpp || cmake_object_order_depends_target_tec_heuristica
+build CMakeFiles/tec_heuristica_pj1.dir/src/Interface.cpp.o: CXX_COMPILER__tec_heuristica_pj1_unscanned_Debug /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/src/Interface.cpp || cmake_object_order_depends_target_tec_heuristica_pj1
   DEFINES = -DTINYXML2_DEBUG -D_FILE_OFFSET_BITS=64
-  DEP_FILE = CMakeFiles/tec_heuristica.dir/src/Interface.cpp.o.d
+  DEP_FILE = CMakeFiles/tec_heuristica_pj1.dir/src/Interface.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fcolor-diagnostics -Wall -Wextra
-  INCLUDES = -I/Users/jotavsevla/CLionProjects/tec_heuristica/include -I/Users/jotavsevla/CLionProjects/tec_heuristica/lab/tinyxml2
-  OBJECT_DIR = CMakeFiles/tec_heuristica.dir
-  OBJECT_FILE_DIR = CMakeFiles/tec_heuristica.dir/src
+  INCLUDES = -I/Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/include -I/Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/lab/tinyxml2
+  OBJECT_DIR = CMakeFiles/tec_heuristica_pj1.dir
+  OBJECT_FILE_DIR = CMakeFiles/tec_heuristica_pj1.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/tec_heuristica_pj1.dir/
+  TARGET_PDB = bin/tec_heuristica_pj1.pdb
 
-build CMakeFiles/tec_heuristica.dir/src/Edge.cpp.o: CXX_COMPILER__tec_heuristica_unscanned_Debug /Users/jotavsevla/CLionProjects/tec_heuristica/src/Edge.cpp || cmake_object_order_depends_target_tec_heuristica
+build CMakeFiles/tec_heuristica_pj1.dir/src/Edge.cpp.o: CXX_COMPILER__tec_heuristica_pj1_unscanned_Debug /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/src/Edge.cpp || cmake_object_order_depends_target_tec_heuristica_pj1
   DEFINES = -DTINYXML2_DEBUG -D_FILE_OFFSET_BITS=64
-  DEP_FILE = CMakeFiles/tec_heuristica.dir/src/Edge.cpp.o.d
+  DEP_FILE = CMakeFiles/tec_heuristica_pj1.dir/src/Edge.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fcolor-diagnostics -Wall -Wextra
-  INCLUDES = -I/Users/jotavsevla/CLionProjects/tec_heuristica/include -I/Users/jotavsevla/CLionProjects/tec_heuristica/lab/tinyxml2
-  OBJECT_DIR = CMakeFiles/tec_heuristica.dir
-  OBJECT_FILE_DIR = CMakeFiles/tec_heuristica.dir/src
+  INCLUDES = -I/Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/include -I/Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/lab/tinyxml2
+  OBJECT_DIR = CMakeFiles/tec_heuristica_pj1.dir
+  OBJECT_FILE_DIR = CMakeFiles/tec_heuristica_pj1.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/tec_heuristica_pj1.dir/
+  TARGET_PDB = bin/tec_heuristica_pj1.pdb
 
-build CMakeFiles/tec_heuristica.dir/src/Route.cpp.o: CXX_COMPILER__tec_heuristica_unscanned_Debug /Users/jotavsevla/CLionProjects/tec_heuristica/src/Route.cpp || cmake_object_order_depends_target_tec_heuristica
+build CMakeFiles/tec_heuristica_pj1.dir/src/Route.cpp.o: CXX_COMPILER__tec_heuristica_pj1_unscanned_Debug /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/src/Route.cpp || cmake_object_order_depends_target_tec_heuristica_pj1
   DEFINES = -DTINYXML2_DEBUG -D_FILE_OFFSET_BITS=64
-  DEP_FILE = CMakeFiles/tec_heuristica.dir/src/Route.cpp.o.d
+  DEP_FILE = CMakeFiles/tec_heuristica_pj1.dir/src/Route.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fcolor-diagnostics -Wall -Wextra
-  INCLUDES = -I/Users/jotavsevla/CLionProjects/tec_heuristica/include -I/Users/jotavsevla/CLionProjects/tec_heuristica/lab/tinyxml2
-  OBJECT_DIR = CMakeFiles/tec_heuristica.dir
-  OBJECT_FILE_DIR = CMakeFiles/tec_heuristica.dir/src
+  INCLUDES = -I/Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/include -I/Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/lab/tinyxml2
+  OBJECT_DIR = CMakeFiles/tec_heuristica_pj1.dir
+  OBJECT_FILE_DIR = CMakeFiles/tec_heuristica_pj1.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/tec_heuristica_pj1.dir/
+  TARGET_PDB = bin/tec_heuristica_pj1.pdb
 
-build CMakeFiles/tec_heuristica.dir/src/PhysarumSolver.cpp.o: CXX_COMPILER__tec_heuristica_unscanned_Debug /Users/jotavsevla/CLionProjects/tec_heuristica/src/PhysarumSolver.cpp || cmake_object_order_depends_target_tec_heuristica
+build CMakeFiles/tec_heuristica_pj1.dir/src/PhysarumSolver.cpp.o: CXX_COMPILER__tec_heuristica_pj1_unscanned_Debug /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/src/PhysarumSolver.cpp || cmake_object_order_depends_target_tec_heuristica_pj1
   DEFINES = -DTINYXML2_DEBUG -D_FILE_OFFSET_BITS=64
-  DEP_FILE = CMakeFiles/tec_heuristica.dir/src/PhysarumSolver.cpp.o.d
+  DEP_FILE = CMakeFiles/tec_heuristica_pj1.dir/src/PhysarumSolver.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fcolor-diagnostics -Wall -Wextra
-  INCLUDES = -I/Users/jotavsevla/CLionProjects/tec_heuristica/include -I/Users/jotavsevla/CLionProjects/tec_heuristica/lab/tinyxml2
-  OBJECT_DIR = CMakeFiles/tec_heuristica.dir
-  OBJECT_FILE_DIR = CMakeFiles/tec_heuristica.dir/src
+  INCLUDES = -I/Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/include -I/Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/lab/tinyxml2
+  OBJECT_DIR = CMakeFiles/tec_heuristica_pj1.dir
+  OBJECT_FILE_DIR = CMakeFiles/tec_heuristica_pj1.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/tec_heuristica_pj1.dir/
+  TARGET_PDB = bin/tec_heuristica_pj1.pdb
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target tec_heuristica
+# Link build statements for EXECUTABLE target tec_heuristica_pj1
 
 
 #############################################
-# Link the executable bin/tec_heuristica
+# Link the executable bin/tec_heuristica_pj1
 
-build bin/tec_heuristica: CXX_EXECUTABLE_LINKER__tec_heuristica_Debug CMakeFiles/tec_heuristica.dir/src/main.cpp.o CMakeFiles/tec_heuristica.dir/src/Interface.cpp.o CMakeFiles/tec_heuristica.dir/src/Edge.cpp.o CMakeFiles/tec_heuristica.dir/src/Route.cpp.o CMakeFiles/tec_heuristica.dir/src/PhysarumSolver.cpp.o | lab/tinyxml2/libtinyxml2.a || lab/tinyxml2/libtinyxml2.a
+build bin/tec_heuristica_pj1: CXX_EXECUTABLE_LINKER__tec_heuristica_pj1_Debug CMakeFiles/tec_heuristica_pj1.dir/src/main.cpp.o CMakeFiles/tec_heuristica_pj1.dir/src/Interface.cpp.o CMakeFiles/tec_heuristica_pj1.dir/src/Edge.cpp.o CMakeFiles/tec_heuristica_pj1.dir/src/Route.cpp.o CMakeFiles/tec_heuristica_pj1.dir/src/PhysarumSolver.cpp.o | lab/tinyxml2/libtinyxml2.a || lab/tinyxml2/libtinyxml2.a
   FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7
   LINK_LIBRARIES = lab/tinyxml2/libtinyxml2.a
-  OBJECT_DIR = CMakeFiles/tec_heuristica.dir
+  OBJECT_DIR = CMakeFiles/tec_heuristica_pj1.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = bin/tec_heuristica
-  TARGET_PDB = tec_heuristica.dbg
+  TARGET_COMPILE_PDB = CMakeFiles/tec_heuristica_pj1.dir/
+  TARGET_FILE = bin/tec_heuristica_pj1
+  TARGET_PDB = bin/tec_heuristica_pj1.pdb
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -122,7 +133,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/jotavsevla/CLionProjects/tec_heuristica -B/Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug
+  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1 -B/Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -140,7 +151,7 @@ build list_install_components: phony
 # Utility command for install
 
 build CMakeFiles/install.util: CUSTOM_COMMAND all
-  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -152,7 +163,7 @@ build install: phony CMakeFiles/install.util
 # Utility command for install/local
 
 build CMakeFiles/install/local.util: CUSTOM_COMMAND all
-  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -164,7 +175,7 @@ build install/local: phony CMakeFiles/install/local.util
 # Utility command for install/strip
 
 build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
-  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -173,7 +184,7 @@ build install/strip: phony CMakeFiles/install/strip.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /Users/jotavsevla/CLionProjects/tec_heuristica/CMakeLists.txt
+# /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/CMakeLists.txt
 # =============================================================================
 
 
@@ -353,13 +364,15 @@ build lab/tinyxml2/ContinuousSubmit: phony lab/tinyxml2/CMakeFiles/ContinuousSub
 
 build cmake_object_order_depends_target_tinyxml2: phony || lab/tinyxml2/CMakeFiles/tinyxml2.dir
 
-build lab/tinyxml2/CMakeFiles/tinyxml2.dir/tinyxml2.cpp.o: CXX_COMPILER__tinyxml2_unscanned_Debug /Users/jotavsevla/CLionProjects/tec_heuristica/lab/tinyxml2/tinyxml2.cpp || cmake_object_order_depends_target_tinyxml2
+build lab/tinyxml2/CMakeFiles/tinyxml2.dir/tinyxml2.cpp.o: CXX_COMPILER__tinyxml2_unscanned_Debug /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/lab/tinyxml2/tinyxml2.cpp || cmake_object_order_depends_target_tinyxml2
   DEFINES = -DTINYXML2_DEBUG -D_FILE_OFFSET_BITS=64
   DEP_FILE = lab/tinyxml2/CMakeFiles/tinyxml2.dir/tinyxml2.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fvisibility-inlines-hidden -fcolor-diagnostics
-  INCLUDES = -I/Users/jotavsevla/CLionProjects/tec_heuristica/lab/tinyxml2
+  INCLUDES = -I/Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/lab/tinyxml2
   OBJECT_DIR = lab/tinyxml2/CMakeFiles/tinyxml2.dir
   OBJECT_FILE_DIR = lab/tinyxml2/CMakeFiles/tinyxml2.dir
+  TARGET_COMPILE_PDB = lab/tinyxml2/CMakeFiles/tinyxml2.dir/tinyxml2.pdb
+  TARGET_PDB = lab/tinyxml2/libtinyxml2.pdb
 
 
 # =============================================================================
@@ -375,8 +388,9 @@ build lab/tinyxml2/libtinyxml2.a: CXX_STATIC_LIBRARY_LINKER__tinyxml2_Debug lab/
   OBJECT_DIR = lab/tinyxml2/CMakeFiles/tinyxml2.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = lab/tinyxml2/CMakeFiles/tinyxml2.dir/tinyxml2.pdb
   TARGET_FILE = lab/tinyxml2/libtinyxml2.a
-  TARGET_PDB = tinyxml2.a.dbg
+  TARGET_PDB = lab/tinyxml2/libtinyxml2.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target xmltest
@@ -387,13 +401,15 @@ build lab/tinyxml2/libtinyxml2.a: CXX_STATIC_LIBRARY_LINKER__tinyxml2_Debug lab/
 
 build cmake_object_order_depends_target_xmltest: phony || cmake_object_order_depends_target_tinyxml2
 
-build lab/tinyxml2/CMakeFiles/xmltest.dir/xmltest.cpp.o: CXX_COMPILER__xmltest_unscanned_Debug /Users/jotavsevla/CLionProjects/tec_heuristica/lab/tinyxml2/xmltest.cpp || cmake_object_order_depends_target_xmltest
+build lab/tinyxml2/CMakeFiles/xmltest.dir/xmltest.cpp.o: CXX_COMPILER__xmltest_unscanned_Debug /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/lab/tinyxml2/xmltest.cpp || cmake_object_order_depends_target_xmltest
   DEFINES = -DTINYXML2_DEBUG -D_FILE_OFFSET_BITS=64
   DEP_FILE = lab/tinyxml2/CMakeFiles/xmltest.dir/xmltest.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -fvisibility=hidden -fvisibility-inlines-hidden -fcolor-diagnostics
-  INCLUDES = -I/Users/jotavsevla/CLionProjects/tec_heuristica/lab/tinyxml2
+  INCLUDES = -I/Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/lab/tinyxml2
   OBJECT_DIR = lab/tinyxml2/CMakeFiles/xmltest.dir
   OBJECT_FILE_DIR = lab/tinyxml2/CMakeFiles/xmltest.dir
+  TARGET_COMPILE_PDB = lab/tinyxml2/CMakeFiles/xmltest.dir/
+  TARGET_PDB = lab/tinyxml2/xmltest.pdb
 
 
 # =============================================================================
@@ -409,15 +425,16 @@ build lab/tinyxml2/xmltest: CXX_EXECUTABLE_LINKER__xmltest_Debug lab/tinyxml2/CM
   OBJECT_DIR = lab/tinyxml2/CMakeFiles/xmltest.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = lab/tinyxml2/CMakeFiles/xmltest.dir/
   TARGET_FILE = lab/tinyxml2/xmltest
-  TARGET_PDB = xmltest.dbg
+  TARGET_PDB = lab/tinyxml2/xmltest.pdb
 
 
 #############################################
 # Utility command for edit_cache
 
 build lab/tinyxml2/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -428,7 +445,7 @@ build lab/tinyxml2/edit_cache: phony lab/tinyxml2/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build lab/tinyxml2/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/jotavsevla/CLionProjects/tec_heuristica -B/Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug
+  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1 -B/Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -446,7 +463,7 @@ build lab/tinyxml2/list_install_components: phony
 # Utility command for install
 
 build lab/tinyxml2/CMakeFiles/install.util: CUSTOM_COMMAND lab/tinyxml2/all
-  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -458,7 +475,7 @@ build lab/tinyxml2/install: phony lab/tinyxml2/CMakeFiles/install.util
 # Utility command for install/local
 
 build lab/tinyxml2/CMakeFiles/install/local.util: CUSTOM_COMMAND lab/tinyxml2/all
-  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -470,7 +487,7 @@ build lab/tinyxml2/install/local: phony lab/tinyxml2/CMakeFiles/install/local.ut
 # Utility command for install/strip
 
 build lab/tinyxml2/CMakeFiles/install/strip.util: CUSTOM_COMMAND lab/tinyxml2/all
-  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -482,7 +499,7 @@ build lab/tinyxml2/install/strip: phony lab/tinyxml2/CMakeFiles/install/strip.ut
 # Custom command for lab/tinyxml2/CMakeFiles/Experimental
 
 build lab/tinyxml2/CMakeFiles/Experimental | ${cmake_ninja_workdir}lab/tinyxml2/CMakeFiles/Experimental: CUSTOM_COMMAND
-  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D Experimental
+  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D Experimental
   pool = console
 
 
@@ -490,7 +507,7 @@ build lab/tinyxml2/CMakeFiles/Experimental | ${cmake_ninja_workdir}lab/tinyxml2/
 # Custom command for lab/tinyxml2/CMakeFiles/Nightly
 
 build lab/tinyxml2/CMakeFiles/Nightly | ${cmake_ninja_workdir}lab/tinyxml2/CMakeFiles/Nightly: CUSTOM_COMMAND
-  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D Nightly
+  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D Nightly
   pool = console
 
 
@@ -498,7 +515,7 @@ build lab/tinyxml2/CMakeFiles/Nightly | ${cmake_ninja_workdir}lab/tinyxml2/CMake
 # Custom command for lab/tinyxml2/CMakeFiles/Continuous
 
 build lab/tinyxml2/CMakeFiles/Continuous | ${cmake_ninja_workdir}lab/tinyxml2/CMakeFiles/Continuous: CUSTOM_COMMAND
-  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D Continuous
+  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D Continuous
   pool = console
 
 
@@ -506,7 +523,7 @@ build lab/tinyxml2/CMakeFiles/Continuous | ${cmake_ninja_workdir}lab/tinyxml2/CM
 # Custom command for lab/tinyxml2/CMakeFiles/NightlyMemoryCheck
 
 build lab/tinyxml2/CMakeFiles/NightlyMemoryCheck | ${cmake_ninja_workdir}lab/tinyxml2/CMakeFiles/NightlyMemoryCheck: CUSTOM_COMMAND
-  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D NightlyMemoryCheck
+  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D NightlyMemoryCheck
   pool = console
 
 
@@ -514,7 +531,7 @@ build lab/tinyxml2/CMakeFiles/NightlyMemoryCheck | ${cmake_ninja_workdir}lab/tin
 # Custom command for lab/tinyxml2/CMakeFiles/NightlyStart
 
 build lab/tinyxml2/CMakeFiles/NightlyStart | ${cmake_ninja_workdir}lab/tinyxml2/CMakeFiles/NightlyStart: CUSTOM_COMMAND
-  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D NightlyStart
+  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D NightlyStart
   pool = console
 
 
@@ -522,7 +539,7 @@ build lab/tinyxml2/CMakeFiles/NightlyStart | ${cmake_ninja_workdir}lab/tinyxml2/
 # Custom command for lab/tinyxml2/CMakeFiles/NightlyUpdate
 
 build lab/tinyxml2/CMakeFiles/NightlyUpdate | ${cmake_ninja_workdir}lab/tinyxml2/CMakeFiles/NightlyUpdate: CUSTOM_COMMAND
-  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D NightlyUpdate
+  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D NightlyUpdate
   pool = console
 
 
@@ -530,7 +547,7 @@ build lab/tinyxml2/CMakeFiles/NightlyUpdate | ${cmake_ninja_workdir}lab/tinyxml2
 # Custom command for lab/tinyxml2/CMakeFiles/NightlyConfigure
 
 build lab/tinyxml2/CMakeFiles/NightlyConfigure | ${cmake_ninja_workdir}lab/tinyxml2/CMakeFiles/NightlyConfigure: CUSTOM_COMMAND
-  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D NightlyConfigure
+  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D NightlyConfigure
   pool = console
 
 
@@ -538,7 +555,7 @@ build lab/tinyxml2/CMakeFiles/NightlyConfigure | ${cmake_ninja_workdir}lab/tinyx
 # Custom command for lab/tinyxml2/CMakeFiles/NightlyBuild
 
 build lab/tinyxml2/CMakeFiles/NightlyBuild | ${cmake_ninja_workdir}lab/tinyxml2/CMakeFiles/NightlyBuild: CUSTOM_COMMAND
-  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D NightlyBuild
+  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D NightlyBuild
   pool = console
 
 
@@ -546,7 +563,7 @@ build lab/tinyxml2/CMakeFiles/NightlyBuild | ${cmake_ninja_workdir}lab/tinyxml2/
 # Custom command for lab/tinyxml2/CMakeFiles/NightlyTest
 
 build lab/tinyxml2/CMakeFiles/NightlyTest | ${cmake_ninja_workdir}lab/tinyxml2/CMakeFiles/NightlyTest: CUSTOM_COMMAND
-  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D NightlyTest
+  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D NightlyTest
   pool = console
 
 
@@ -554,7 +571,7 @@ build lab/tinyxml2/CMakeFiles/NightlyTest | ${cmake_ninja_workdir}lab/tinyxml2/C
 # Custom command for lab/tinyxml2/CMakeFiles/NightlyCoverage
 
 build lab/tinyxml2/CMakeFiles/NightlyCoverage | ${cmake_ninja_workdir}lab/tinyxml2/CMakeFiles/NightlyCoverage: CUSTOM_COMMAND
-  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D NightlyCoverage
+  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D NightlyCoverage
   pool = console
 
 
@@ -562,7 +579,7 @@ build lab/tinyxml2/CMakeFiles/NightlyCoverage | ${cmake_ninja_workdir}lab/tinyxm
 # Custom command for lab/tinyxml2/CMakeFiles/NightlyMemCheck
 
 build lab/tinyxml2/CMakeFiles/NightlyMemCheck | ${cmake_ninja_workdir}lab/tinyxml2/CMakeFiles/NightlyMemCheck: CUSTOM_COMMAND
-  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D NightlyMemCheck
+  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D NightlyMemCheck
   pool = console
 
 
@@ -570,7 +587,7 @@ build lab/tinyxml2/CMakeFiles/NightlyMemCheck | ${cmake_ninja_workdir}lab/tinyxm
 # Custom command for lab/tinyxml2/CMakeFiles/NightlySubmit
 
 build lab/tinyxml2/CMakeFiles/NightlySubmit | ${cmake_ninja_workdir}lab/tinyxml2/CMakeFiles/NightlySubmit: CUSTOM_COMMAND
-  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D NightlySubmit
+  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D NightlySubmit
   pool = console
 
 
@@ -578,7 +595,7 @@ build lab/tinyxml2/CMakeFiles/NightlySubmit | ${cmake_ninja_workdir}lab/tinyxml2
 # Custom command for lab/tinyxml2/CMakeFiles/ExperimentalStart
 
 build lab/tinyxml2/CMakeFiles/ExperimentalStart | ${cmake_ninja_workdir}lab/tinyxml2/CMakeFiles/ExperimentalStart: CUSTOM_COMMAND
-  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D ExperimentalStart
+  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D ExperimentalStart
   pool = console
 
 
@@ -586,7 +603,7 @@ build lab/tinyxml2/CMakeFiles/ExperimentalStart | ${cmake_ninja_workdir}lab/tiny
 # Custom command for lab/tinyxml2/CMakeFiles/ExperimentalUpdate
 
 build lab/tinyxml2/CMakeFiles/ExperimentalUpdate | ${cmake_ninja_workdir}lab/tinyxml2/CMakeFiles/ExperimentalUpdate: CUSTOM_COMMAND
-  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D ExperimentalUpdate
+  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D ExperimentalUpdate
   pool = console
 
 
@@ -594,7 +611,7 @@ build lab/tinyxml2/CMakeFiles/ExperimentalUpdate | ${cmake_ninja_workdir}lab/tin
 # Custom command for lab/tinyxml2/CMakeFiles/ExperimentalConfigure
 
 build lab/tinyxml2/CMakeFiles/ExperimentalConfigure | ${cmake_ninja_workdir}lab/tinyxml2/CMakeFiles/ExperimentalConfigure: CUSTOM_COMMAND
-  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D ExperimentalConfigure
+  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D ExperimentalConfigure
   pool = console
 
 
@@ -602,7 +619,7 @@ build lab/tinyxml2/CMakeFiles/ExperimentalConfigure | ${cmake_ninja_workdir}lab/
 # Custom command for lab/tinyxml2/CMakeFiles/ExperimentalBuild
 
 build lab/tinyxml2/CMakeFiles/ExperimentalBuild | ${cmake_ninja_workdir}lab/tinyxml2/CMakeFiles/ExperimentalBuild: CUSTOM_COMMAND
-  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D ExperimentalBuild
+  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D ExperimentalBuild
   pool = console
 
 
@@ -610,7 +627,7 @@ build lab/tinyxml2/CMakeFiles/ExperimentalBuild | ${cmake_ninja_workdir}lab/tiny
 # Custom command for lab/tinyxml2/CMakeFiles/ExperimentalTest
 
 build lab/tinyxml2/CMakeFiles/ExperimentalTest | ${cmake_ninja_workdir}lab/tinyxml2/CMakeFiles/ExperimentalTest: CUSTOM_COMMAND
-  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D ExperimentalTest
+  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D ExperimentalTest
   pool = console
 
 
@@ -618,7 +635,7 @@ build lab/tinyxml2/CMakeFiles/ExperimentalTest | ${cmake_ninja_workdir}lab/tinyx
 # Custom command for lab/tinyxml2/CMakeFiles/ExperimentalCoverage
 
 build lab/tinyxml2/CMakeFiles/ExperimentalCoverage | ${cmake_ninja_workdir}lab/tinyxml2/CMakeFiles/ExperimentalCoverage: CUSTOM_COMMAND
-  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D ExperimentalCoverage
+  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D ExperimentalCoverage
   pool = console
 
 
@@ -626,7 +643,7 @@ build lab/tinyxml2/CMakeFiles/ExperimentalCoverage | ${cmake_ninja_workdir}lab/t
 # Custom command for lab/tinyxml2/CMakeFiles/ExperimentalMemCheck
 
 build lab/tinyxml2/CMakeFiles/ExperimentalMemCheck | ${cmake_ninja_workdir}lab/tinyxml2/CMakeFiles/ExperimentalMemCheck: CUSTOM_COMMAND
-  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D ExperimentalMemCheck
+  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D ExperimentalMemCheck
   pool = console
 
 
@@ -634,7 +651,7 @@ build lab/tinyxml2/CMakeFiles/ExperimentalMemCheck | ${cmake_ninja_workdir}lab/t
 # Custom command for lab/tinyxml2/CMakeFiles/ExperimentalSubmit
 
 build lab/tinyxml2/CMakeFiles/ExperimentalSubmit | ${cmake_ninja_workdir}lab/tinyxml2/CMakeFiles/ExperimentalSubmit: CUSTOM_COMMAND
-  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D ExperimentalSubmit
+  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D ExperimentalSubmit
   pool = console
 
 
@@ -642,7 +659,7 @@ build lab/tinyxml2/CMakeFiles/ExperimentalSubmit | ${cmake_ninja_workdir}lab/tin
 # Custom command for lab/tinyxml2/CMakeFiles/ContinuousStart
 
 build lab/tinyxml2/CMakeFiles/ContinuousStart | ${cmake_ninja_workdir}lab/tinyxml2/CMakeFiles/ContinuousStart: CUSTOM_COMMAND
-  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D ContinuousStart
+  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D ContinuousStart
   pool = console
 
 
@@ -650,7 +667,7 @@ build lab/tinyxml2/CMakeFiles/ContinuousStart | ${cmake_ninja_workdir}lab/tinyxm
 # Custom command for lab/tinyxml2/CMakeFiles/ContinuousUpdate
 
 build lab/tinyxml2/CMakeFiles/ContinuousUpdate | ${cmake_ninja_workdir}lab/tinyxml2/CMakeFiles/ContinuousUpdate: CUSTOM_COMMAND
-  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D ContinuousUpdate
+  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D ContinuousUpdate
   pool = console
 
 
@@ -658,7 +675,7 @@ build lab/tinyxml2/CMakeFiles/ContinuousUpdate | ${cmake_ninja_workdir}lab/tinyx
 # Custom command for lab/tinyxml2/CMakeFiles/ContinuousConfigure
 
 build lab/tinyxml2/CMakeFiles/ContinuousConfigure | ${cmake_ninja_workdir}lab/tinyxml2/CMakeFiles/ContinuousConfigure: CUSTOM_COMMAND
-  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D ContinuousConfigure
+  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D ContinuousConfigure
   pool = console
 
 
@@ -666,7 +683,7 @@ build lab/tinyxml2/CMakeFiles/ContinuousConfigure | ${cmake_ninja_workdir}lab/ti
 # Custom command for lab/tinyxml2/CMakeFiles/ContinuousBuild
 
 build lab/tinyxml2/CMakeFiles/ContinuousBuild | ${cmake_ninja_workdir}lab/tinyxml2/CMakeFiles/ContinuousBuild: CUSTOM_COMMAND
-  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D ContinuousBuild
+  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D ContinuousBuild
   pool = console
 
 
@@ -674,7 +691,7 @@ build lab/tinyxml2/CMakeFiles/ContinuousBuild | ${cmake_ninja_workdir}lab/tinyxm
 # Custom command for lab/tinyxml2/CMakeFiles/ContinuousTest
 
 build lab/tinyxml2/CMakeFiles/ContinuousTest | ${cmake_ninja_workdir}lab/tinyxml2/CMakeFiles/ContinuousTest: CUSTOM_COMMAND
-  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D ContinuousTest
+  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D ContinuousTest
   pool = console
 
 
@@ -682,7 +699,7 @@ build lab/tinyxml2/CMakeFiles/ContinuousTest | ${cmake_ninja_workdir}lab/tinyxml
 # Custom command for lab/tinyxml2/CMakeFiles/ContinuousCoverage
 
 build lab/tinyxml2/CMakeFiles/ContinuousCoverage | ${cmake_ninja_workdir}lab/tinyxml2/CMakeFiles/ContinuousCoverage: CUSTOM_COMMAND
-  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D ContinuousCoverage
+  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D ContinuousCoverage
   pool = console
 
 
@@ -690,7 +707,7 @@ build lab/tinyxml2/CMakeFiles/ContinuousCoverage | ${cmake_ninja_workdir}lab/tin
 # Custom command for lab/tinyxml2/CMakeFiles/ContinuousMemCheck
 
 build lab/tinyxml2/CMakeFiles/ContinuousMemCheck | ${cmake_ninja_workdir}lab/tinyxml2/CMakeFiles/ContinuousMemCheck: CUSTOM_COMMAND
-  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D ContinuousMemCheck
+  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D ContinuousMemCheck
   pool = console
 
 
@@ -698,7 +715,7 @@ build lab/tinyxml2/CMakeFiles/ContinuousMemCheck | ${cmake_ninja_workdir}lab/tin
 # Custom command for lab/tinyxml2/CMakeFiles/ContinuousSubmit
 
 build lab/tinyxml2/CMakeFiles/ContinuousSubmit | ${cmake_ninja_workdir}lab/tinyxml2/CMakeFiles/ContinuousSubmit: CUSTOM_COMMAND
-  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D ContinuousSubmit
+  COMMAND = cd /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug/lab/tinyxml2 && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest -D ContinuousSubmit
   pool = console
 
 # =============================================================================
@@ -762,7 +779,7 @@ build NightlyUpdate: phony lab/tinyxml2/NightlyUpdate
 
 build libtinyxml2.a: phony lab/tinyxml2/libtinyxml2.a
 
-build tec_heuristica: phony bin/tec_heuristica
+build tec_heuristica_pj1: phony bin/tec_heuristica_pj1
 
 build tinyxml2: phony lab/tinyxml2/libtinyxml2.a
 
@@ -774,14 +791,14 @@ build xmltest: phony lab/tinyxml2/xmltest
 # =============================================================================
 
 #############################################
-# Folder: /Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug
+# Folder: /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug
 
-build all: phony bin/tec_heuristica lab/tinyxml2/all
+build all: phony bin/tec_heuristica_pj1 lab/tinyxml2/all
 
 # =============================================================================
 
 #############################################
-# Folder: /Users/jotavsevla/CLionProjects/tec_heuristica/cmake-build-debug/lab/tinyxml2
+# Folder: /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/cmake-build-debug/lab/tinyxml2
 
 build lab/tinyxml2/all: phony lab/tinyxml2/libtinyxml2.a lab/tinyxml2/xmltest
 
@@ -792,14 +809,14 @@ build lab/tinyxml2/all: phony lab/tinyxml2/libtinyxml2.a lab/tinyxml2/xmltest
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakePackageConfigHelpers.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CTest.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CTestTargets.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CTestUseLaunchers.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/DartConfiguration.tcl.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/GNUInstallDirs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/UnixPaths.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/WriteBasicConfigVersionFile.cmake /Users/jotavsevla/CLionProjects/tec_heuristica/CMakeLists.txt /Users/jotavsevla/CLionProjects/tec_heuristica/lab/tinyxml2/CMakeLists.txt /Users/jotavsevla/CLionProjects/tec_heuristica/lab/tinyxml2/cmake/tinyxml2.pc.in CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake lab/tinyxml2/tinyxml2.pc.gen
+build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCCompiler.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCCompilerABI.c /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCXXCompiler.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCompilerIdDetection.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeDetermineCompileFeatures.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeDetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeFindBinUtils.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakePackageConfigHelpers.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeParseImplicitIncludeInfo.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeParseImplicitLinkInfo.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeParseLibraryArchitecture.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystem.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeTestCompilerCommon.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CTest.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CTestTargets.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CTestUseLaunchers.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/ADSP-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/ARMCC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/ARMClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/AppleClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Borland-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Cray-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/GHS-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/GNU-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/HP-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/IAR-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Intel-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/LCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/MSVC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/NVHPC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/PGI-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/PathScale-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/SCO-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/TI-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Tasking-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Watcom-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/XL-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/zOS-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/DartConfiguration.tcl.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/GNUInstallDirs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Internal/FeatureTesting.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin-Determine-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/UnixPaths.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/WriteBasicConfigVersionFile.cmake /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/CMakeLists.txt /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/lab/tinyxml2/CMakeLists.txt /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/lab/tinyxml2/cmake/tinyxml2.pc.in CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake lab/tinyxml2/tinyxml2.pc.gen
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakePackageConfigHelpers.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CTest.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CTestTargets.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CTestUseLaunchers.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/DartConfiguration.tcl.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/GNUInstallDirs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/UnixPaths.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/WriteBasicConfigVersionFile.cmake /Users/jotavsevla/CLionProjects/tec_heuristica/CMakeLists.txt /Users/jotavsevla/CLionProjects/tec_heuristica/lab/tinyxml2/CMakeLists.txt /Users/jotavsevla/CLionProjects/tec_heuristica/lab/tinyxml2/cmake/tinyxml2.pc.in CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake lab/tinyxml2/tinyxml2.pc.gen: phony
+build /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCCompiler.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCCompilerABI.c /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCXXCompiler.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCompilerIdDetection.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeDetermineCompileFeatures.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeDetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeFindBinUtils.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakePackageConfigHelpers.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeParseImplicitIncludeInfo.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeParseImplicitLinkInfo.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeParseLibraryArchitecture.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystem.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeTestCompilerCommon.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CTest.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CTestTargets.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CTestUseLaunchers.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/ADSP-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/ARMCC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/ARMClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/AppleClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Borland-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Cray-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/GHS-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/GNU-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/HP-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/IAR-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Intel-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/LCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/MSVC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/NVHPC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/PGI-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/PathScale-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/SCO-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/TI-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Tasking-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Watcom-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/XL-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/zOS-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/DartConfiguration.tcl.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/GNUInstallDirs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Internal/FeatureTesting.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin-Determine-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/UnixPaths.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/WriteBasicConfigVersionFile.cmake /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/CMakeLists.txt /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/lab/tinyxml2/CMakeLists.txt /Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/lab/tinyxml2/cmake/tinyxml2.pc.in CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake lab/tinyxml2/tinyxml2.pc.gen: phony
 
 
 #############################################
