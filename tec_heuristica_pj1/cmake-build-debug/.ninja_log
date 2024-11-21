@@ -1,15 +1,11 @@
 # ninja log v5
-2262	2537	1732029390059999684	bin/tec_heuristica	2d681cc491632d99
-3637	3759	1731951670346789000	lab/tinyxml2/libtinyxml2.a	ad0b6fa41e85d8ba
-2918	3637	1731951670214336358	lab/tinyxml2/CMakeFiles/tinyxml2.dir/tinyxml2.cpp.o	dc82449938e913f9
-0	511	1732030271219686200	build.ninja	5b28ac2894bdf123
-5	160	1732030277968699130	CMakeFiles/tec_heuristica_pj1.dir/src/Edge.cpp.o	165cc43c96342963
-160	1707	1732030279511719447	CMakeFiles/tec_heuristica_pj1.dir/src/Route.cpp.o	67ed3a62565e5cc1
-4	3497	1732030281297160004	CMakeFiles/tec_heuristica_pj1.dir/src/main.cpp.o	add4ccdf6f1375c4
-4	4026	1732030281825148285	CMakeFiles/tec_heuristica_pj1.dir/src/Interface.cpp.o	4bebdafca932e0e0
-3499	4418	1732030282221252388	lab/tinyxml2/CMakeFiles/tinyxml2.dir/tinyxml2.cpp.o	f0b80318272ba6d0
-4418	4603	1732030282417631000	lab/tinyxml2/libtinyxml2.a	ad0b6fa41e85d8ba
-4026	4803	1732030282609298996	lab/tinyxml2/CMakeFiles/xmltest.dir/xmltest.cpp.o	56a206599eec63ad
-1711	4810	1732030282611783277	CMakeFiles/tec_heuristica_pj1.dir/src/PhysarumSolver.cpp.o	3001e854faf2df3b
-4803	4941	1732030282746606194	lab/tinyxml2/xmltest	aa9288919d2ecbfc
-4810	4945	1732030282753896096	bin/tec_heuristica_pj1	dd4adf67d6420845
+5548	5692	1732037384891258910	bin/tec_heuristica_pj1	dd4adf67d6420845
+2063	5548	1732037384746111001	CMakeFiles/tec_heuristica_pj1.dir/src/PhysarumSolver.cpp.o	3001e854faf2df3b
+4621	5516	1732037384713863646	lab/tinyxml2/CMakeFiles/xmltest.dir/xmltest.cpp.o	56a206599eec63ad
+3882	4946	1732037384140820750	lab/tinyxml2/CMakeFiles/tinyxml2.dir/tinyxml2.cpp.o	f0b80318272ba6d0
+5516	5687	1732037384888366666	lab/tinyxml2/xmltest	aa9288919d2ecbfc
+4946	5091	1732037384297244000	lab/tinyxml2/libtinyxml2.a	ad0b6fa41e85d8ba
+4	4620	1732037383790714020	CMakeFiles/tec_heuristica_pj1.dir/src/Interface.cpp.o	4bebdafca932e0e0
+0	3880	1732037383057216317	CMakeFiles/tec_heuristica_pj1.dir/src/main.cpp.o	add4ccdf6f1375c4
+244	2057	1732037381250143202	CMakeFiles/tec_heuristica_pj1.dir/src/Route.cpp.o	67ed3a62565e5cc1
+7	242	1732037379436960868	CMakeFiles/tec_heuristica_pj1.dir/src/Edge.cpp.o	165cc43c96342963
