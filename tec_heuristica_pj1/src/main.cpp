@@ -111,11 +111,9 @@ void runWithChristofidesFile() {
         for (const auto& edge : data.edges) {
             solver.addEdge(edge.from, edge.to, edge.weight);
         }
-
         for (const auto& demand : data.demands) {
             solver.setDemand(demand.first, demand.second);
         }
-
         auto routes = solver.findRoutes();
         Interface::displayResults(routes);
 
@@ -168,13 +166,13 @@ int main() {
         } catch (const exception& e) {
             cerr << "Erro: " << e.what() << endl;
             cout << "Pressione Enter para continuar...";
-            cin.ignore(numeric_limits<streamsize>::max(), '\n');
-            cin.get();
+            std::cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            std::cin.get();
         }
 
         cout << "\nPressione Enter para continuar...";
-        cin.ignore(numeric_limits<streamsize>::max(), '\n');
-        cin.get();
+        std::cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        std::cin.get();
     }
 
     return 0;
