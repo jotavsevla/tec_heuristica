@@ -9,11 +9,11 @@
 using namespace std;
 
 // Constantes como membros estáticos
-const int MAX_ITERATIONS = 100;
-const double MU = 1.3;
-const double DELTA_T = 0.01;
-const double EPSILON = 1e-6;
-const double MIN_FLOW = 0.01;
+//const int MAX_ITERATIONS = 100;
+//const double MU = 1.3;
+//const double DELTA_T = 0.01;
+//const double EPSILON = 1e-6;
+//const double MIN_FLOW = 0.01;
 
 PhysarumSolver::PhysarumSolver(int nodes, int vehicles, double capacity, int depotNode)
     : numNodes(nodes), numVehicles(vehicles), vehicleCapacity(capacity), depot(depotNode) {

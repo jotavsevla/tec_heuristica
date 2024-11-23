@@ -53,9 +53,11 @@
     <list default="true" id="c4592ba8-0a12-4d32-90e9-c04b45b243b2" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/../.gitmodules" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../OSA/tpII_osa/Buffer.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OSA/tpII_osa/Buffer.h" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../OSA/tpII_osa/Dados.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../OSA/tpII_osa/Makefile" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../OSA/tpII_osa/Registro.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OSA/tpII_osa/Registro.h" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../OSA/tpII_osa/main.cpp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../OSA/tpI_osa/Arquivo.cpp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../OSA/tpI_osa/Arquivo.h" afterDir="false" />
@@ -65,30 +67,6 @@
       <change afterPath="$PROJECT_DIR$/../OSA/tpI_osa/Registro.h" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../OSA/tpI_osa/main.cpp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../OSA/tpI_osa/textos/Nomes_Idades_1.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tec_heuristica_pj1/cmake-build-debug/bin/resultados/CMT02.xml.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tec_heuristica_pj1/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tec_heuristica_pj1/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tec_heuristica_pj1/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tec_heuristica_pj1/.idea/tec_heuristica.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tec_heuristica.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tec_heuristica_pj1/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tec_heuristica_pj1/cmake-build-debug/.cmake/api/v1/reply/index-2024-11-19T15-31-11-0342.json" beforeDir="false" afterPath="$PROJECT_DIR$/tec_heuristica_pj1/cmake-build-debug/.cmake/api/v1/reply/index-2024-11-19T17-29-28-0899.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tec_heuristica_pj1/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/tec_heuristica_pj1/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tec_heuristica_pj1/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/tec_heuristica_pj1/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tec_heuristica_pj1/cmake-build-debug/50_nos.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tec_heuristica_pj1/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/tec_heuristica_pj1/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tec_heuristica_pj1/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tec_heuristica_pj1/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tec_heuristica_pj1/cmake-build-debug/CMakeFiles/tec_heuristica_pj1.dir/src/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/tec_heuristica_pj1/cmake-build-debug/CMakeFiles/tec_heuristica_pj1.dir/src/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tec_heuristica_pj1/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/tec_heuristica_pj1/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tec_heuristica_pj1/cmake-build-debug/bin/tec_heuristica" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tec_heuristica_pj1/cmake-build-debug/bin/tec_heuristica_pj1" beforeDir="false" afterPath="$PROJECT_DIR$/tec_heuristica_pj1/cmake-build-debug/bin/tec_heuristica_pj1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tec_heuristica_pj1/cmake-build-debug/exemplo_8_nos.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tec_heuristica_pj1/cmake-build-debug/lab/tinyxml2/libtinyxml2.a" beforeDir="false" afterPath="$PROJECT_DIR$/tec_heuristica_pj1/cmake-build-debug/lab/tinyxml2/libtinyxml2.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tec_heuristica_pj1/cmake-build-debug/lab/tinyxml2/xmltest" beforeDir="false" afterPath="$PROJECT_DIR$/tec_heuristica_pj1/cmake-build-debug/lab/tinyxml2/xmltest" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tec_heuristica_pj1/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tec_heuristica_pj1/src/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,11 +133,6 @@
     </key>
   </component>
   <component name="RunManager" selected="CMake Application.pj1">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Continuous" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tec_heuristica_pj1" TARGET_NAME="Continuous" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -370,6 +343,7 @@
       <workItem from="1732030265702" duration="836000" />
       <workItem from="1732036168063" duration="894000" />
       <workItem from="1732037359535" duration="2221000" />
+      <workItem from="1732338957151" duration="23000" />
     </task>
     <servers />
   </component>

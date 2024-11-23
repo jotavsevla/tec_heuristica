@@ -252,8 +252,9 @@ void Interface::runAutomaticTest() {
     int numNodes = 6;
     int numVehicles = 2;
     double vehicleCapacity = 30.0;
+    int depot = 0;
 
-    PhysarumSolver solver(numNodes, numVehicles, vehicleCapacity);
+    PhysarumSolver solver(numNodes, numVehicles, vehicleCapacity, depot);
 
     solver.addEdge(0, 1, 1.0);
     solver.addEdge(0, 2, 2.0);

@@ -1,85 +1,8 @@
-#include "../include/PhysarumSolver.h"
 #include "../include/Interface.h"
+#include "../include/PhysarumSolver.h"
 #include <iostream>
-#include <stdexcept>
-#include <fstream>
-#include <filesystem>
 
 using namespace std;
-
-bool checkDirectoryStructure() {
-    bool success = true;
-
-    // Verifica se o diretório de entradas existe
-    if (!filesystem::exists("entradas")) {
-        cerr << "Erro: Diretório 'entradas' não encontrado!\n";
-        success = false;
-    }
-
-    // Verifica se os arquivos XML existem
-    for (int i = 1; i <= 14; i++) {
-        string filename = string("entradas/CMT") + (i < 10 ? "0" : "") + to_string(i) + ".xml";
-        if (!filesystem::exists(filename)) {
-            cerr << "Aviso: Arquivo '" << filename << "' não encontrado!\n";
-        }
-    }
-
-    // Cria diretório de resultados se não existir
-    if (!filesystem::exists("resultados")) {
-        try {
-            filesystem::create_directory("resultados");
-            cout << "Diretório 'resultados' criado com sucesso.\n";
-        } catch (const exception& e) {
-            cerr << "Erro ao criar diretório 'resultados': " << e.what() << "\n";
-            success = false;
-        }
-    }
-
-    return success;
-}
-
-void runWithInputFile() {
-    cout << "Physarum CVRP Solver - Versão 1.0\n";
-    cout << "=================================\n";
-
-    // Verifica a estrutura de diretórios no início
-    if (!checkDirectoryStructure()) {
-        cout << "\nAtenção: Alguns problemas foram encontrados na estrutura de diretórios.\n";
-        cout << "Deseja continuar mesmo assim? (s/n): ";
-        char response;
-        cin >> response;
-        if (response != 's' && response != 'S') {
-            return;
-        }
-    }
-    string inputFile;
-    cout << "Digite o nome do arquivo de entrada: ";
-    cin >> inputFile;
-
-    try {
-        auto data = Interface::readInputFile(inputFile);
-        PhysarumSolver solver(data.numNodes, data.numVehicles, data.vehicleCapacity);
-
-        for (const auto& edge : data.edges) {
-            solver.addEdge(edge.from, edge.to, edge.weight);
-        }
-
-        for (const auto& demand : data.demands) {
-            solver.setDemand(demand.first, demand.second);
-        }
-
-        auto routes = solver.findRoutes();
-        Interface::displayResults(routes);
-
-        string outputFile = inputFile + ".out";
-        Interface::writeOutputFile(outputFile, routes);
-        cout << "\nResultados salvos em: " << outputFile << endl;
-
-    } catch (const exception& e) {
-        cerr << "Erro: " << e.what() << endl;
-    }
-}
-
 void runWithChristofidesFile() {
     cout << "Arquivos disponíveis:\n";
     cout << "=====================\n";
@@ -127,31 +50,57 @@ void runWithChristofidesFile() {
 }
 
 
-
 int main() {
-    cout << "Physarum CVRP Solver - Versão 1.0\n";
-    cout << "=================================\n";
-
-    while (true) {
-        try {
+    try {
+        while (true) {
             Interface::showMenu();
-
             int choice;
-            if (!(cin >> choice)) {
-                cin.clear();
-                cin.ignore(numeric_limits<streamsize>::max(), '\n');
-                throw runtime_error("Entrada inválida. Por favor, digite um número.");
-            }
+            cin >> choice;
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
             switch (choice) {
-                case 1:
-                    cout << "Funcionalidade de criar arquivo de exemplo não implementada.\n";
+                case 1: {
+                    cout << "Funcionalidade não implementada.\n";
                     break;
-                case 2:
-                    runWithInputFile();
+                }
+                case 2: {
+                    cout << "Digite o nome do arquivo de entrada: ";
+                    string filename;
+                    getline(cin, filename);
+
+                    try {
+                        auto data = Interface::readInputFile(filename);
+                        PhysarumSolver solver(data.numNodes, data.numVehicles,
+                                              data.vehicleCapacity, 0);  // Assume depósito em 0
+
+                        // Adiciona arestas
+                        for (const auto& edge : data.edges) {
+                            solver.addEdge(edge.from, edge.to, edge.weight);
+                        }
+
+                        // Adiciona demandas
+                        for (const auto& demand : data.demands) {
+                            solver.setDemand(demand.first, demand.second);
+                        }
+
+                        auto routes = solver.findRoutes();
+                        Interface::displayResults(routes);
+
+                        cout << "\nDeseja salvar os resultados? (s/n): ";
+                        string save;
+                        getline(cin, save);
+                        if (save == "s" || save == "S") {
+                            cout << "Digite o nome do arquivo de saída: ";
+                            string outfile;
+                            getline(cin, outfile);
+                            Interface::writeOutputFile(outfile, routes);
+                        }
+                    } catch (const exception& e) {
+                        cerr << "Erro: " << e.what() << endl;
+                    }
                     break;
-                case 3:
-                    runWithChristofidesFile();
+                }
+                case 3: runWithChristofidesFile();
                     break;
                 case 4:
                     Interface::runAutomaticTest();
@@ -160,19 +109,12 @@ int main() {
                     cout << "Encerrando programa...\n";
                     return 0;
                 default:
-                    cout << "Opção inválida! Por favor, escolha uma opção válida.\n";
+                    cout << "Opção inválida!\n";
             }
-
-        } catch (const exception& e) {
-            cerr << "Erro: " << e.what() << endl;
-            cout << "Pressione Enter para continuar...";
-            std::cin.ignore(numeric_limits<streamsize>::max(), '\n');
-            std::cin.get();
         }
-
-        cout << "\nPressione Enter para continuar...";
-        std::cin.ignore(numeric_limits<streamsize>::max(), '\n');
-        std::cin.get();
+    } catch (const exception& e) {
+        cerr << "Erro fatal: " << e.what() << endl;
+        return 1;
     }
 
     return 0;

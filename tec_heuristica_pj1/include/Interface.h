@@ -4,6 +4,7 @@
 #include "Types.h"
 #include "Edge.h"
 #include "Route.h"
+#include "PhysarumSolver.h"
 #include <string>
 #include <map>
 #include <vector>

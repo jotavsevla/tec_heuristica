@@ -58,9 +58,9 @@ P4UpdateOptions:
 P4UpdateCustom: 
 
 # Generic update command
-UpdateCommand: /usr/local/bin/git
+UpdateCommand: 
 UpdateOptions: 
-UpdateType: git
+UpdateType: 
 
 # Compiler info
 Compiler: /Library/Developer/CommandLineTools/usr/bin/c++
