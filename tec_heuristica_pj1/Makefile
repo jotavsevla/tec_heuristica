@@ -660,6 +660,30 @@ src/Route.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tec_heuristica_pj1.dir/build.make CMakeFiles/tec_heuristica_pj1.dir/src/Route.cpp.s
 .PHONY : src/Route.cpp.s
 
+src/SolutionValidator.o: src/SolutionValidator.cpp.o
+.PHONY : src/SolutionValidator.o
+
+# target to build an object file
+src/SolutionValidator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tec_heuristica_pj1.dir/build.make CMakeFiles/tec_heuristica_pj1.dir/src/SolutionValidator.cpp.o
+.PHONY : src/SolutionValidator.cpp.o
+
+src/SolutionValidator.i: src/SolutionValidator.cpp.i
+.PHONY : src/SolutionValidator.i
+
+# target to preprocess a source file
+src/SolutionValidator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tec_heuristica_pj1.dir/build.make CMakeFiles/tec_heuristica_pj1.dir/src/SolutionValidator.cpp.i
+.PHONY : src/SolutionValidator.cpp.i
+
+src/SolutionValidator.s: src/SolutionValidator.cpp.s
+.PHONY : src/SolutionValidator.s
+
+# target to generate assembly for a file
+src/SolutionValidator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tec_heuristica_pj1.dir/build.make CMakeFiles/tec_heuristica_pj1.dir/src/SolutionValidator.cpp.s
+.PHONY : src/SolutionValidator.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -739,6 +763,9 @@ help:
 	@echo "... src/Route.o"
 	@echo "... src/Route.i"
 	@echo "... src/Route.s"
+	@echo "... src/SolutionValidator.o"
+	@echo "... src/SolutionValidator.i"
+	@echo "... src/SolutionValidator.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

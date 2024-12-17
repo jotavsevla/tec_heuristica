@@ -21,6 +21,7 @@ set(SOURCES
         src/Edge.cpp
         src/Route.cpp
         src/PhysarumSolver.cpp
+        src/SolutionValidator.cpp
 )
 
 # Cria o executável

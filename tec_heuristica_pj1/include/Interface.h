@@ -28,6 +28,7 @@ public:
     static void writeOutputFile(const string& filename, const vector<Route>& routes);
     static void showMenu();
     static void runAutomaticTest();
+    static void validateChristofidesResult(const string& xmlFile, const vector<Route>& routes);
 };
 
 #endif // INTERFACE_H

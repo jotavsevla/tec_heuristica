@@ -1,5 +1,6 @@
 #include "../include/Interface.h"
 #include "../include/PhysarumSolver.h"
+#include "../include/SolutionValidator.h"
 #include "../lab/tinyxml2/tinyxml2.h"
 #include <iostream>
 #include <fstream>
@@ -242,42 +243,18 @@ void Interface::showMenu() {
     cout << "1. Criar arquivo de exemplo (8 nós)\n";
     cout << "2. Resolver problema de arquivo texto\n";
     cout << "3. Resolver problema de arquivo XML (Christofides)\n";
-    cout << "4. Executar teste automático\n";
-    cout << "5. Sair\n";
+    cout << "4. Sair\n";
     cout << "=================================\n";
     cout << "Escolha uma opção: ";
 }
 
-void Interface::runAutomaticTest() {
-    int numNodes = 6;
-    int numVehicles = 2;
-    double vehicleCapacity = 30.0;
-    int depot = 0;
-
-    PhysarumSolver solver(numNodes, numVehicles, vehicleCapacity, depot);
-
-    solver.addEdge(0, 1, 1.0);
-    solver.addEdge(0, 2, 2.0);
-    solver.addEdge(1, 2, 1.0);
-    solver.addEdge(1, 3, 2.0);
-    solver.addEdge(2, 3, 1.0);
-    solver.addEdge(2, 4, 2.0);
-    solver.addEdge(3, 4, 1.0);
-    solver.addEdge(3, 5, 2.0);
-    solver.addEdge(4, 5, 1.0);
-
-    solver.setDemand(0, 0.0);
-    solver.setDemand(1, 10.0);
-    solver.setDemand(2, 15.0);
-    solver.setDemand(3, 12.0);
-    solver.setDemand(4, 8.0);
-    solver.setDemand(5, 14.0);
-
-    cout << "\nExecutando teste automático com valores padrão:\n";
-    cout << "Número de nós: " << numNodes << "\n";
-    cout << "Número de veículos: " << numVehicles << "\n";
-    cout << "Capacidade dos veículos: " << vehicleCapacity << "\n";
-
-    auto routes = solver.findRoutes();
-    displayResults(routes);
+void Interface::validateChristofidesResult(const string& xmlFile, const vector<Route>& routes) {
+    try {
+        SolutionValidator validator;
+        validator.loadXMLData(xmlFile);
+        validator.loadSolution(routes);
+        validator.validateSolution();
+    } catch (const exception& e) {
+        cerr << "Erro na validação: " << e.what() << endl;
+    }
 }

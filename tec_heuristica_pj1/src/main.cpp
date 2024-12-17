@@ -40,6 +40,8 @@ void runWithChristofidesFile() {
         auto routes = solver.findRoutes();
         Interface::displayResults(routes);
 
+        Interface::validateChristofidesResult(fullPath, routes);
+
         string outputFile = "resultados/" + filename + ".out";
         Interface::writeOutputFile(outputFile, routes);
         cout << "\nResultados salvos em: " << outputFile << endl;
@@ -103,9 +105,6 @@ int main() {
                 case 3: runWithChristofidesFile();
                     break;
                 case 4:
-                    Interface::runAutomaticTest();
-                    break;
-                case 5:
                     cout << "Encerrando programa...\n";
                     return 0;
                 default:

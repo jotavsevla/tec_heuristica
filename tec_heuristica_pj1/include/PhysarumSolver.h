@@ -41,6 +41,7 @@ public:
     vector<Route> findRoutes();
     void printSolution(const vector<Route>& routes);
     static double calculateEuclideanDistance(const Point& p1, const Point& p2);
+    double calculateRouteSegmentDistance(int from, int to);
 
 private:
     // Métodos privados

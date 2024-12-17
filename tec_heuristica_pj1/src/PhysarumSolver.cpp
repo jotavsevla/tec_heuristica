@@ -123,6 +123,10 @@ bool PhysarumSolver::isRouteFeasible(const vector<int>& route) const {
     return totalDemand <= vehicleCapacity;
 }
 
+double PhysarumSolver::calculateRouteSegmentDistance(int from, int to) {
+    return adjacencyMatrix[from][to];
+}
+
 vector<Route> PhysarumSolver::findRoutes() {
     vector<Route> routes;
     set<int> nodesToVisit;
@@ -132,7 +136,9 @@ vector<Route> PhysarumSolver::findRoutes() {
         if (i != depot) nodesToVisit.insert(i);
     }
 
-    while (!nodesToVisit.empty() && routes.size() < numVehicles) {
+    while (!nodesToVisit.empty() && (numVehicles >= 0 &&
+        routes.size() < static_cast<std::vector<Route>::size_type>(numVehicles))) {
+
         Route currentRoute;
         currentRoute.nodes.push_back(depot);
         double currentDemand = 0.0;
@@ -160,12 +166,12 @@ vector<Route> PhysarumSolver::findRoutes() {
             sort(candidates.begin(), candidates.end());
             
             int nextNode = candidates[0].second;
-            double minDistance = candidates[0].first;
+            double actualDistance = calculateRouteSegmentDistance(currentNode, nextNode);
 
             currentRoute.nodes.push_back(nextNode);
             currentDemand += demands[nextNode];
             currentRoute.totalDemand = currentDemand;
-            currentRoute.totalDistance += minDistance;
+            currentRoute.totalDistance += actualDistance;
             nodesToVisit.erase(nextNode);
 
             // Atualizar conductvidades
@@ -190,7 +196,11 @@ vector<Route> PhysarumSolver::findRoutes() {
             }
         }
 
+        // Adiciona o depósito final à rota atual
+        double finalDistance = calculateRouteSegmentDistance(currentRoute.nodes.back(), depot);
+        currentRoute.totalDistance += finalDistance;
         currentRoute.nodes.push_back(depot);
+        
         routes.push_back(currentRoute);
     }
 
