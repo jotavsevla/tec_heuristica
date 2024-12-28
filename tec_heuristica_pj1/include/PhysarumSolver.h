@@ -9,12 +9,13 @@ using namespace std;
 
 class PhysarumSolver {
 private:
-    // Constantes
-    static constexpr int MAX_ITERATIONS = 100;
-    static constexpr double MU = 1.3;
-    static constexpr double DELTA_T = 0.01;
-    static constexpr double EPSILON = 1e-6;
-    static constexpr double MIN_FLOW = 0.01;
+// consts 
+static constexpr int MAX_ITERATIONS = 5000;    // Mais iterações
+static constexpr double MU = 2.5;              // Reforço mais forte
+static constexpr double DELTA_T = 0.005;       // Mudanças mais graduais
+static constexpr double EPSILON = 1e-8;        // Convergência mais precisa
+static constexpr double MIN_FLOW = 0.008;      // Mantém mais caminhos viáveis
+
 
     // Atributos da classe
     const int numNodes;
@@ -46,6 +47,7 @@ public:
 private:
     // Métodos privados
     vector<double> calculatePressures(int source, int target, int vehicleIdx);
+    double calculateNodeScore(int currentNode, int candidateNode, int vehicleIdx);
     void updateConductivity(const vector<vector<double>>& flux, int vehicleIdx);
     bool isRouteFeasible(const vector<int>& route) const;
 };

@@ -5,15 +5,16 @@
 #include <cmath>
 #include <iomanip>
 #include <algorithm>
+#include <cstdlib>
 
 using namespace std;
 
-// Constantes como membros estáticos
-//const int MAX_ITERATIONS = 100;
-//const double MU = 1.3;
-//const double DELTA_T = 0.01;
-//const double EPSILON = 1e-6;
-//const double MIN_FLOW = 0.01;
+// static constexpr int MAX_ITERATIONS = 5000;    // Mais iterações
+// static constexpr double MU = 2.5;              // Reforço mais forte
+// static constexpr double DELTA_T = 0.005;       // Mudanças mais graduais
+// static constexpr double EPSILON = 1e-8;        // Convergência mais precisa
+// static constexpr double MIN_FLOW = 0.008;      // Mantém mais caminhos viáveis
+
 
 PhysarumSolver::PhysarumSolver(int nodes, int vehicles, double capacity, int depotNode)
     : numNodes(nodes), numVehicles(vehicles), vehicleCapacity(capacity), depot(depotNode) {
@@ -91,6 +92,15 @@ vector<double> PhysarumSolver::calculatePressures(int source, int target, int ve
 
     return pressures;
 }
+// Adicione esta função à classe PhysarumSolver
+double PhysarumSolver::calculateNodeScore(int currentNode, int candidateNode, int vehicleIdx) {
+    double distance = adjacencyMatrix[currentNode][candidateNode];
+    double conductivity = vehicleConductivity[vehicleIdx][currentNode][candidateNode];
+    auto pressures = calculatePressures(currentNode, candidateNode, vehicleIdx);
+    double flow = conductivity * abs(pressures[currentNode] - pressures[candidateNode]);
+    
+    return (conductivity * MU + flow * 3) / (pow(distance, 1.5));
+}
 
 void PhysarumSolver::updateConductivity(const vector<vector<double>>& flux, int vehicleIdx) {
     for (int i = 0; i < numNodes; ++i) {
@@ -131,7 +141,6 @@ vector<Route> PhysarumSolver::findRoutes() {
     vector<Route> routes;
     set<int> nodesToVisit;
 
-    // Inicialização
     for (int i = 0; i < numNodes; ++i) {
         if (i != depot) nodesToVisit.insert(i);
     }
@@ -146,27 +155,40 @@ vector<Route> PhysarumSolver::findRoutes() {
         while (!nodesToVisit.empty()) {
             int currentNode = currentRoute.nodes.back();
             
-            // Estrutura para armazenar candidatos viáveis
-            vector<pair<double, int>> candidates;
+            struct CandidateNode {
+                int node;
+                double conductivityScore;
+                double distance;
+            };
+            vector<CandidateNode> candidates;
             
-            // Pré-calcular candidatos viáveis
+            // Avalia candidatos usando condutividade
             for (int node : nodesToVisit) {
                 double potentialDemand = currentDemand + demands[node];
                 if (potentialDemand <= vehicleCapacity) {
+                    
                     double distance = adjacencyMatrix[currentNode][node];
+
                     if (distance > 0) {
-                        candidates.emplace_back(distance, node);
+                        double score = 0;
+                        for (int v = 0; v < numVehicles; v++) 
+                            score += calculateNodeScore(currentNode, node, v);
+                        score /= numVehicles;
+                        candidates.push_back({node, score, distance});
                     }
                 }
             }
 
             if (candidates.empty()) break;
 
-            // Ordenar candidatos por distância
-            sort(candidates.begin(), candidates.end());
+            // Ordena por score de condutividade (maior é melhor)
+            sort(candidates.begin(), candidates.end(),
+                [](const CandidateNode& a, const CandidateNode& b) {
+                    return a.conductivityScore > b.conductivityScore;
+                });
             
-            int nextNode = candidates[0].second;
-            double actualDistance = calculateRouteSegmentDistance(currentNode, nextNode);
+            int nextNode = candidates[0].node;
+            double actualDistance = candidates[0].distance;
 
             currentRoute.nodes.push_back(nextNode);
             currentDemand += demands[nextNode];
@@ -174,7 +196,7 @@ vector<Route> PhysarumSolver::findRoutes() {
             currentRoute.totalDistance += actualDistance;
             nodesToVisit.erase(nextNode);
 
-            // Atualizar conductvidades
+            // Atualiza condutividades e fluxos
             for (int vehicleIdx = 0; vehicleIdx < numVehicles; ++vehicleIdx) {
                 auto pressures = calculatePressures(currentRoute.nodes.front(),
                                                   currentRoute.nodes.back(),
@@ -182,7 +204,6 @@ vector<Route> PhysarumSolver::findRoutes() {
 
                 vector<vector<double>> flux(numNodes, vector<double>(numNodes, 0.0));
                 
-                // Calcular fluxo
                 for (int i = 0; i < numNodes; ++i) {
                     for (int j = 0; j < numNodes; ++j) {
                         if (adjacencyMatrix[i][j] > 0) {
@@ -196,7 +217,6 @@ vector<Route> PhysarumSolver::findRoutes() {
             }
         }
 
-        // Adiciona o depósito final à rota atual
         double finalDistance = calculateRouteSegmentDistance(currentRoute.nodes.back(), depot);
         currentRoute.totalDistance += finalDistance;
         currentRoute.nodes.push_back(depot);
