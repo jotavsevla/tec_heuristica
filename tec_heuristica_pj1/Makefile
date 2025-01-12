@@ -636,6 +636,30 @@ src/PhysarumSolver.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tec_heuristica_pj1.dir/build.make CMakeFiles/tec_heuristica_pj1.dir/src/PhysarumSolver.cpp.s
 .PHONY : src/PhysarumSolver.cpp.s
 
+src/PhysarumSolverV3.o: src/PhysarumSolverV3.cpp.o
+.PHONY : src/PhysarumSolverV3.o
+
+# target to build an object file
+src/PhysarumSolverV3.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tec_heuristica_pj1.dir/build.make CMakeFiles/tec_heuristica_pj1.dir/src/PhysarumSolverV3.cpp.o
+.PHONY : src/PhysarumSolverV3.cpp.o
+
+src/PhysarumSolverV3.i: src/PhysarumSolverV3.cpp.i
+.PHONY : src/PhysarumSolverV3.i
+
+# target to preprocess a source file
+src/PhysarumSolverV3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tec_heuristica_pj1.dir/build.make CMakeFiles/tec_heuristica_pj1.dir/src/PhysarumSolverV3.cpp.i
+.PHONY : src/PhysarumSolverV3.cpp.i
+
+src/PhysarumSolverV3.s: src/PhysarumSolverV3.cpp.s
+.PHONY : src/PhysarumSolverV3.s
+
+# target to generate assembly for a file
+src/PhysarumSolverV3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tec_heuristica_pj1.dir/build.make CMakeFiles/tec_heuristica_pj1.dir/src/PhysarumSolverV3.cpp.s
+.PHONY : src/PhysarumSolverV3.cpp.s
+
 src/Route.o: src/Route.cpp.o
 .PHONY : src/Route.o
 
@@ -760,6 +784,9 @@ help:
 	@echo "... src/PhysarumSolver.o"
 	@echo "... src/PhysarumSolver.i"
 	@echo "... src/PhysarumSolver.s"
+	@echo "... src/PhysarumSolverV3.o"
+	@echo "... src/PhysarumSolverV3.i"
+	@echo "... src/PhysarumSolverV3.s"
 	@echo "... src/Route.o"
 	@echo "... src/Route.i"
 	@echo "... src/Route.s"

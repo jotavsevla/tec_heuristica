@@ -22,6 +22,7 @@ set(SOURCES
         src/Route.cpp
         src/PhysarumSolver.cpp
         src/SolutionValidator.cpp
+        src/PhysarumSolverV3.cpp
 )
 
 # Cria o executável
@@ -34,6 +35,11 @@ target_link_libraries(${PROJECT_NAME} PRIVATE tinyxml2)
 if(APPLE)
     target_compile_options(${PROJECT_NAME} PRIVATE -Wall -Wextra)
     set(CMAKE_OSX_DEPLOYMENT_TARGET "10.15" CACHE STRING "Minimum OS X deployment version")
+endif()
+# configurando Adress Sanitizer
+if(CMAKE_CXX_COMPILER_ID MATCHES "Clang|GNU")
+    add_compile_options(-fsanitize=address)
+    add_link_options(-fsanitize=address)
 endif()
 
 

@@ -1,12 +1,9 @@
 #include "../include/Interface.h"
-#include "../include/PhysarumSolver.h"
 #include "../include/SolutionValidator.h"
-#include "../lab/tinyxml2/tinyxml2.h"
 #include <iostream>
 #include <fstream>
 #include <sstream>
 #include <stdexcept>
-#include <iomanip>
 #include <cmath>
 
 using namespace std;
