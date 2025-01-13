@@ -24,6 +24,11 @@ set(SOURCES
         src/SolutionValidator.cpp
         src/PhysarumSolverV3.cpp
 )
+# configurando Adress Sanitizer
+if(CMAKE_CXX_COMPILER_ID MATCHES "Clang|GNU")
+    add_compile_options(-fsanitize=address -fno-omit-frame-pointer)
+    add_link_options(-fsanitize=address)
+endif()
 
 # Cria o executável
 add_executable(${PROJECT_NAME} ${SOURCES})
@@ -36,11 +41,13 @@ if(APPLE)
     target_compile_options(${PROJECT_NAME} PRIVATE -Wall -Wextra)
     set(CMAKE_OSX_DEPLOYMENT_TARGET "10.15" CACHE STRING "Minimum OS X deployment version")
 endif()
-# configurando Adress Sanitizer
-if(CMAKE_CXX_COMPILER_ID MATCHES "Clang|GNU")
-    add_compile_options(-fsanitize=address)
-    add_link_options(-fsanitize=address)
-endif()
+#if(APPLE)
+#    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fsanitize=address -fno-omit-frame-pointer")
+#    set(CMAKE_LINKER_FLAGS "${CMAKE_LINKER_FLAGS} -fsanitize=address")
+#endif()
+
+
+
 
 
 # Configura os diretórios de saída

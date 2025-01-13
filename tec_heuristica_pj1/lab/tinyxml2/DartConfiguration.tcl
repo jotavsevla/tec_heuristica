@@ -45,7 +45,7 @@ SVNOptions:
 SVNUpdateOptions: 
 
 # Git options
-GITCommand: /usr/local/bin/git
+GITCommand: 
 GITInitSubmodules: 
 GITUpdateOptions: 
 GITUpdateCustom: 

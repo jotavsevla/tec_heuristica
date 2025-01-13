@@ -18,58 +18,117 @@ PhysarumSolverV3::PhysarumSolverV3(int nodes, int vehicles, double capacity, int
 
 bool PhysarumSolverV3::isMoveFeasible(const Route& route1, const Route& route2,
                                       int nodeIdx1, int nodeIdx2) const {
-    // Verifica se os índices são válidos e não são depósitos
-    if (nodeIdx1 <= 0 || static_cast<size_t>(nodeIdx1) >= route1.nodes.size() - 1 ||
-        nodeIdx2 <= 0 || static_cast<size_t>(nodeIdx2) >= route2.nodes.size() - 1) {
+    try {
+        // Verificações básicas das rotas
+        if (route1.nodes.size() < 3 || route2.nodes.size() < 3) {
+            return false;
+        }
+
+        // Verifica índices negativos ou zero
+        if (nodeIdx1 <= 0 || nodeIdx2 <= 0) {
+            return false;
+        }
+
+        // Converte para size_t após verificar negativos
+        size_t idx1 = static_cast<size_t>(nodeIdx1);
+        size_t idx2 = static_cast<size_t>(nodeIdx2);
+
+        // Verifica limites superiores
+        if (idx1 >= route1.nodes.size() - 1 || idx2 >= route2.nodes.size() - 1) {
+            return false;
+        }
+
+        // Verifica nós usando índices seguros
+        int node1 = route1.nodes[idx1];
+        int node2 = route2.nodes[idx2];
+
+        if (node1 < 0 || node2 < 0 || node1 >= numNodes || node2 >= numNodes) {
+            return false;
+        }
+
+        // Busca as demandas de forma segura
+        const auto it1 = demands.find(node1);
+        const auto it2 = demands.find(node2);
+        if (it1 == demands.end() || it2 == demands.end()) {
+            return false;
+        }
+
+        const double demand1 = it1->second;
+        const double demand2 = it2->second;
+
+        // Verifica demandas individuais
+        if (demand1 < 0 || demand2 < 0) {
+            return false;
+        }
+
+        // Calcula novas demandas
+        const double newDemand1 = route1.totalDemand - demand1 + demand2;
+        const double newDemand2 = route2.totalDemand - demand2 + demand1;
+
+        // Usa margem de segurança
+        static constexpr double CAPACITY_MARGIN = 0.999;
+        const double effectiveCapacity = vehicleCapacity * CAPACITY_MARGIN;
+
+        return (newDemand1 <= effectiveCapacity && newDemand2 <= effectiveCapacity);
+
+    } catch (const std::exception &) {
         return false;
     }
-
-    // Para troca entre rotas, verifica capacidade
-    int node1 = route1.nodes[nodeIdx1];
-    int node2 = route2.nodes[nodeIdx2];
-
-    double demand1 = demands.at(node1);
-    double demand2 = demands.at(node2);
-
-    // Calcula novas demandas após a troca
-    double newDemand1 = route1.totalDemand - demand1 + demand2;
-    double newDemand2 = route2.totalDemand - demand2 + demand1;
-
-    return newDemand1 <= vehicleCapacity && newDemand2 <= vehicleCapacity;
 }
-
 double PhysarumSolverV3::calculateMoveCost(const Route& route1, const Route& route2,
                                            int nodeIdx1, int nodeIdx2) const {
+    // Primeiro verificamos índices negativos
+    if (nodeIdx1 < 0 || nodeIdx2 < 0) {
+        return std::numeric_limits<double>::max();
+    }
+
+    // Convertemos para size_t
+    size_t idx1 = static_cast<size_t>(nodeIdx1);
+    size_t idx2 = static_cast<size_t>(nodeIdx2);
+
+    // Verificamos limites
+    if (idx1 >= route1.nodes.size() - 1 || idx2 >= route2.nodes.size() - 1) {
+        return std::numeric_limits<double>::max();
+    }
+
     double currentCost = 0.0;
     double newCost = 0.0;
 
-    // Calcula custo atual
     if (&route1 == &route2) {  // Movimento intra-rota
+        // Verifica se os índices mais 1 são válidos
+        if (idx1 + 1 >= route1.nodes.size() || idx2 + 1 >= route1.nodes.size()) {
+            return std::numeric_limits<double>::max();
+        }
+
         // Conexões atuais
-        currentCost += calculateRouteSegmentDistance(route1.nodes[nodeIdx1-1], route1.nodes[nodeIdx1]);
-        currentCost += calculateRouteSegmentDistance(route1.nodes[nodeIdx1], route1.nodes[nodeIdx1+1]);
-        currentCost += calculateRouteSegmentDistance(route1.nodes[nodeIdx2-1], route1.nodes[nodeIdx2]);
-        currentCost += calculateRouteSegmentDistance(route1.nodes[nodeIdx2], route1.nodes[nodeIdx2+1]);
+        currentCost += calculateRouteSegmentDistance(route1.nodes[idx1-1], route1.nodes[idx1]);
+        currentCost += calculateRouteSegmentDistance(route1.nodes[idx1], route1.nodes[idx1+1]);
+        currentCost += calculateRouteSegmentDistance(route1.nodes[idx2-1], route1.nodes[idx2]);
+        currentCost += calculateRouteSegmentDistance(route1.nodes[idx2], route1.nodes[idx2+1]);
 
         // Novas conexões após troca
-        newCost += calculateRouteSegmentDistance(route1.nodes[nodeIdx1-1], route1.nodes[nodeIdx2]);
-        newCost += calculateRouteSegmentDistance(route1.nodes[nodeIdx2], route1.nodes[nodeIdx1+1]);
-        newCost += calculateRouteSegmentDistance(route1.nodes[nodeIdx2-1], route1.nodes[nodeIdx1]);
-        newCost += calculateRouteSegmentDistance(route1.nodes[nodeIdx1], route1.nodes[nodeIdx2+1]);
+        newCost += calculateRouteSegmentDistance(route1.nodes[idx1-1], route1.nodes[idx2]);
+        newCost += calculateRouteSegmentDistance(route1.nodes[idx2], route1.nodes[idx1+1]);
+        newCost += calculateRouteSegmentDistance(route1.nodes[idx2-1], route1.nodes[idx1]);
+        newCost += calculateRouteSegmentDistance(route1.nodes[idx1], route1.nodes[idx2+1]);
     } else {  // Movimento inter-rota
+        if (idx1 + 1 >= route1.nodes.size() || idx2 + 1 >= route2.nodes.size()) {
+            return std::numeric_limits<double>::max();
+        }
+
         // Custo atual na rota 1
-        currentCost += calculateRouteSegmentDistance(route1.nodes[nodeIdx1-1], route1.nodes[nodeIdx1]);
-        currentCost += calculateRouteSegmentDistance(route1.nodes[nodeIdx1], route1.nodes[nodeIdx1+1]);
+        currentCost += calculateRouteSegmentDistance(route1.nodes[idx1-1], route1.nodes[idx1]);
+        currentCost += calculateRouteSegmentDistance(route1.nodes[idx1], route1.nodes[idx1+1]);
 
         // Custo atual na rota 2
-        currentCost += calculateRouteSegmentDistance(route2.nodes[nodeIdx2-1], route2.nodes[nodeIdx2]);
-        currentCost += calculateRouteSegmentDistance(route2.nodes[nodeIdx2], route2.nodes[nodeIdx2+1]);
+        currentCost += calculateRouteSegmentDistance(route2.nodes[idx2-1], route2.nodes[idx2]);
+        currentCost += calculateRouteSegmentDistance(route2.nodes[idx2], route2.nodes[idx2+1]);
 
         // Novo custo após troca
-        newCost += calculateRouteSegmentDistance(route1.nodes[nodeIdx1-1], route2.nodes[nodeIdx2]);
-        newCost += calculateRouteSegmentDistance(route2.nodes[nodeIdx2], route1.nodes[nodeIdx1+1]);
-        newCost += calculateRouteSegmentDistance(route2.nodes[nodeIdx2-1], route1.nodes[nodeIdx1]);
-        newCost += calculateRouteSegmentDistance(route1.nodes[nodeIdx1], route2.nodes[nodeIdx2+1]);
+        newCost += calculateRouteSegmentDistance(route1.nodes[idx1-1], route2.nodes[idx2]);
+        newCost += calculateRouteSegmentDistance(route2.nodes[idx2], route1.nodes[idx1+1]);
+        newCost += calculateRouteSegmentDistance(route2.nodes[idx2-1], route1.nodes[idx1]);
+        newCost += calculateRouteSegmentDistance(route1.nodes[idx1], route2.nodes[idx2+1]);
     }
 
     return newCost - currentCost;

@@ -59,7 +59,7 @@ void runWithChristofidesFile() {
 
     // Constrói o nome do arquivo
     string filename = string("CMT") + (choice < 10 ? "0" : "") + to_string(choice) + ".xml";
-    string fullPath = "entradas/" + filename;
+    string fullPath = "/Users/jotavsevla/CLionProjects/tec_heuristica/tec_heuristica_pj1/entradas/" + filename;
 
     try {
         cout << "\nUsando arquivo: " << fullPath << endl;
