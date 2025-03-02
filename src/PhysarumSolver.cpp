@@ -123,7 +123,7 @@ bool PhysarumSolver::isRouteFeasible(const vector<int>& route) const {
     return totalDemand <= vehicleCapacity;
 }
 
-double PhysarumSolver::calculateRouteSegmentDistance(int from, int to) {
+double PhysarumSolver::calculateRouteSegmentDistance(int from, int to) const{
     return adjacencyMatrix[from][to];
 }
 

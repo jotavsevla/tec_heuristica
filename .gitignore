@@ -6,3 +6,5 @@ CMakeLists.txt
 CMakeCache.txt
 .idea
 .vscode
+bin
+cmake_install.cmake

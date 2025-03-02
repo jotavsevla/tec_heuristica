@@ -8,7 +8,7 @@
 using namespace std;
 
 class PhysarumSolver {
-private:
+protected:
     // Constantes
     static constexpr int MAX_ITERATIONS = 100;
     static constexpr double MU = 1.3;
@@ -38,12 +38,12 @@ public:
     // Métodos públicos
     void addEdge(int from, int to, double weight);
     void setDemand(int node, double demand);
-    vector<Route> findRoutes();
+    virtual vector<Route> findRoutes();
     void printSolution(const vector<Route>& routes);
     static double calculateEuclideanDistance(const Point& p1, const Point& p2);
-    double calculateRouteSegmentDistance(int from, int to);
+    double calculateRouteSegmentDistance(int from, int to) const;
 
-private:
+protected:
     // Métodos privados
     vector<double> calculatePressures(int source, int target, int vehicleIdx);
     void updateConductivity(const vector<vector<double>>& flux, int vehicleIdx);

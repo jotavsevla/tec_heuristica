@@ -588,6 +588,30 @@ src/Edge.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tec_heuristica_pj1.dir/build.make CMakeFiles/tec_heuristica_pj1.dir/src/Edge.cpp.s
 .PHONY : src/Edge.cpp.s
 
+src/GeneticSolver.o: src/GeneticSolver.cpp.o
+.PHONY : src/GeneticSolver.o
+
+# target to build an object file
+src/GeneticSolver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tec_heuristica_pj1.dir/build.make CMakeFiles/tec_heuristica_pj1.dir/src/GeneticSolver.cpp.o
+.PHONY : src/GeneticSolver.cpp.o
+
+src/GeneticSolver.i: src/GeneticSolver.cpp.i
+.PHONY : src/GeneticSolver.i
+
+# target to preprocess a source file
+src/GeneticSolver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tec_heuristica_pj1.dir/build.make CMakeFiles/tec_heuristica_pj1.dir/src/GeneticSolver.cpp.i
+.PHONY : src/GeneticSolver.cpp.i
+
+src/GeneticSolver.s: src/GeneticSolver.cpp.s
+.PHONY : src/GeneticSolver.s
+
+# target to generate assembly for a file
+src/GeneticSolver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tec_heuristica_pj1.dir/build.make CMakeFiles/tec_heuristica_pj1.dir/src/GeneticSolver.cpp.s
+.PHONY : src/GeneticSolver.cpp.s
+
 src/Interface.o: src/Interface.cpp.o
 .PHONY : src/Interface.o
 
@@ -754,6 +778,9 @@ help:
 	@echo "... src/Edge.o"
 	@echo "... src/Edge.i"
 	@echo "... src/Edge.s"
+	@echo "... src/GeneticSolver.o"
+	@echo "... src/GeneticSolver.i"
+	@echo "... src/GeneticSolver.s"
 	@echo "... src/Interface.o"
 	@echo "... src/Interface.i"
 	@echo "... src/Interface.s"

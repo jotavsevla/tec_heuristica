@@ -1,4 +1,5 @@
 #include "../include/GeneticSolver.h"
+#include <iomanip>
 #include <iostream>
 #include <algorithm>
 #include <numeric>
@@ -86,7 +87,7 @@ vector<Individual> GeneticSolver::selection(const vector<Individual>& currentPop
     return selected;
 }
 
-int GeneticSolver::selectRouteForCrossover(const Individual& parent, vector<bool>& selectedNodes) const {
+int GeneticSolver::selectRouteForCrossover(const Individual& parent, vector<bool>& selectedNodes)  {
     if (parent.routes.empty()) {
         return -1;
     }
@@ -662,22 +663,6 @@ void GeneticSolver::swapNodesBetweenRoutesMutation(Individual& individual) {
     route2.totalDemand = route2.totalDemand - demand2 + demand1;
 }
 
-
-if (route1.totalDemand + route2.totalDemand > vehicleCapacity) {
-return;  // Não faz a mutação se exceder a capacidade
-}
-
-// Insere os nós da rota2 (excluindo depósitos) na rota1 antes do depósito final
-for (size_t i = 1; i < route2.nodes.size() - 1; i++) {
-route1.nodes.insert(route1.nodes.end() - 1, route2.nodes[i]);
-}
-
-route1.totalDemand += route2.totalDemand;
-
-// Remove a rota2
-individual.routes.erase(individual.routes.begin() + route2Idx);
-}
-
 void GeneticSolver::routeSplitMutation(Individual& individual) {
     // Só faz split se houver pelo menos uma rota com muitos nós
     vector<size_t> candidateRoutes;
@@ -1016,4 +1001,65 @@ void GeneticSolver::printEvolutionStats(int generation, double bestDistance, dou
     cout << "Média = " << setw(8) << fixed << setprecision(2) << avgDistance << " | ";
     cout << "Pior = " << setw(8) << fixed << setprecision(2) << worstDistance << " | ";
     cout << "Rotas = " << setw(2) << population[0].routes.size() << endl;
+}
+
+void GeneticSolver::routeMergeMutation(Individual& individual) {
+    if (individual.routes.size() < 2) return;  // Precisa de pelo menos 2 rotas
+
+    // Identifica pares de rotas que poderiam ser mescladas
+    vector<pair<size_t, size_t>> mergeCandidates;
+
+    for (size_t i = 0; i < individual.routes.size(); i++) {
+        for (size_t j = i+1; j < individual.routes.size(); j++) {
+            Route& route1 = individual.routes[i];
+            Route& route2 = individual.routes[j];
+
+            // Verifica se a fusão não excede a capacidade
+            if (route1.totalDemand + route2.totalDemand <= vehicleCapacity) {
+                // Calcula o possível ganho de distância com a fusão
+                // Suponha que a rota mesclada preserve a ordem dos nós de ambas as rotas
+
+                // Conexão atual: depósito final da rota1 -> depósito inicial da rota2
+                double currentConnection =
+                        calculateRouteSegmentDistance(route1.nodes.back(), route2.nodes.front());
+
+                // Possível nova conexão: último cliente da rota1 -> primeiro cliente da rota2
+                double newConnection =
+                        calculateRouteSegmentDistance(route1.nodes[route1.nodes.size()-2],
+                                                      route2.nodes[1]);
+
+                double distanceGain = currentConnection - newConnection;
+
+                // Armazena o par de rotas e o ganho esperado
+                mergeCandidates.push_back({i, j});
+            }
+        }
+    }
+
+    // Se não há candidatos viáveis, não faz nada
+    if (mergeCandidates.empty()) return;
+
+    // Seleciona um par aleatório dentre os candidatos
+    uniform_int_distribution<size_t> candidateDist(0, mergeCandidates.size() - 1);
+    auto selectedPair = mergeCandidates[candidateDist(rng)];
+
+    size_t route1Idx = selectedPair.first;
+    size_t route2Idx = selectedPair.second;
+
+    Route& route1 = individual.routes[route1Idx];
+    Route& route2 = individual.routes[route2Idx];
+
+    // Mescla as duas rotas: insere os nós da rota2 (exceto depósito) na rota1 antes do depósito final
+    route1.nodes.pop_back();  // Remove depósito final temporariamente
+
+    // Adiciona os nós da rota2 (exceto depósito inicial)
+    for (size_t i = 1; i < route2.nodes.size(); i++) {
+        route1.nodes.push_back(route2.nodes[i]);
+    }
+
+    // Atualiza a demanda da rota mesclada
+    route1.totalDemand += route2.totalDemand;
+
+    // Remove a rota2 do indivíduo
+    individual.routes.erase(individual.routes.begin() + route2Idx);
 }

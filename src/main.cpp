@@ -1,6 +1,5 @@
 #include "../include/Interface.h"
 #include "../include/PhysarumSolver.h"
-#include "../include/PhysarumSolverV3.h"
 #include "../include/GeneticSolver.h"
 #include <iostream>
 #include <iomanip>

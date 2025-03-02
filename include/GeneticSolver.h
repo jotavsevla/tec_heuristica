@@ -64,7 +64,7 @@ private:
     double calculateRouteDistance(const Route& route) const;
     void updateRouteDistances(Individual& individual);
     bool validateSolution(const Individual& individual) const;
-    int selectRouteForCrossover(const Individual& parent, std::vector<bool>& selectedNodes) const;
+    int selectRouteForCrossover(const Individual& parent, std::vector<bool>& selectedNodes);
     void repairSolution(Individual& offspring) const;
 
     // Operadores de mutação específicos para CVRP
