@@ -17,6 +17,7 @@ O **Capacitated Vehicle Routing Problem** consiste em:
 - **Objetivo**: Minimizar a distância total percorrida por uma frota de veículos
 - **Restrições**:
   - Cada veículo possui capacidade máxima limitada
+  - Todos os veículos tem a mesma capacidade
   - Todos os veículos partem e retornam ao depósito central
   - Cada cliente deve ser visitado exatamente uma vez
   - A demanda total de uma rota não pode exceder a capacidade do veículo
