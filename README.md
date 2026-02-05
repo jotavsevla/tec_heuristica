@@ -432,4 +432,4 @@ Para dúvidas ou sugestões sobre este trabalho, abra uma issue no repositório.
 
 ---
 
-**Desenvolvido como parte do curso de Heurística Computacional** 🎓
+**Desenvolvido como parte da disciplina de Técnicas em Heurística** 🎓
